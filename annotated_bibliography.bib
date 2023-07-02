@@ -1,69 +1,660 @@
-@article{cong19,
-  title        = {{Blockchain Disruption and Smart Contracts}},
-  author       = {Lin William Cong and Zhiguo He},
-  year         = 2019,
-  journal      = {The Review of Financial Studies},
-  publisher    = {[Oxford University Press, The Society for Financial Studies]},
-  volume       = 32,
-  number       = 5,
-  pages        = {pp. 1754--1797},
-  issn         = {08939454, 14657368},
-  url          = {https://www.jstor.org/stable/48568940},
-  urldate      = {2023-03-15},
-  abstract     = {Blockchain technology provides decentralized consensus and potentially enlarges the contracting space through smart contracts. Meanwhile, generating decentralized consensus entails distributing information that necessarily alters the informational environment. We analyze how decentralization relates to consensus quality and how the quintessential features of blockchain remold the landscape of competition. Smart contracts can mitigate informational asymmetry and improve welfare and consumer surplus through enhanced entry and competition, yet distributing information during consensus generation may encourage greater collusion. In general, blockchains sustain market equilibria with a wider range of economic outcomes. We further discuss the implications for antitrust policies targeted at blockchain applications.},
-  annote       = {TBC. The demand shock $X_{t}$ follows a geometric Brownian motion with drift $\mu \_{x}$ and volatility $\sigma \_{x}$ so that 
-  \begin{equation} 
-  dX\_{t}=\mu \_{x}X\_{t}dt+\sigma \_{x}X\_{t}dz\_{t},
-  \end{equation} 
-  where $z\_{t}$ is a standard Wiener process, and $X\_{0}$ is strictly positive. We further assume that $X\_{0}$ is sufficiently low so that the growth options of all firms in the industry are strictly positive at $t=0$. Throughout the paper, we denote by $\mu \_{\mathbf{y}t}$ and $\sigma \_{\mathbf{y}t}$ the mean and standard deviation of any variable $y$ at time $t$, and we omit the subscript $t$ when $\mu \_{\mathbf{y}}$ or $\sigma \_{\mathbf{y}}$ are constant over time.},
+comment{ Outline: price model
+state variable
+assumed and derived characteristics
+model approach
+solution approach
 }
+@inbook{long20,
+    title        = {A Brief Introduction to Blockchain Economics},
+    author       = {Long Chen  and  Lin William Cong  and  Yizhou Xiao},
+    year         = 2020,
+    booktitle    = {Information for Efficient Decision Making},
+    pages        = {1--40},
+    doi          = {10.1142/9789811220470_0001},
+    url          = {https://dx.doi.org/10.1142/9789811220470_0001},
+    chapter      = 1,
+    abstract     = {We introduce economic research on blockchains and its recent advances. In particular, we highlight the (i) unifying concepts on blockchain as a decentralized consensus and its core benefits, (ii) equilibrium characterizations and allegedly irreducible tensions among consensus formation, decentralization, and scalability, (iii) major issues including network security, overconcentration, energy consumption and sustainability, adoption, multi-party computation and encryption, smart contracting, and information distribution and aggregation, and (iv) future directions concerning blockchains and their applications such as informational and agency issues, as well as game-theoretical and mechanism design approaches to blockchain protocols.},
+    annote       = {
+        Outline: price model state variable assumed and derived characteristics model approach solution approach
 
+        This chapter, authored by Chen, Cong, and Xiao, provides a concise and informative introduction to the field of blockchain economics. It is part of the book "Information for Efficient Decision Making" and offers valuable insights into the economic aspects of blockchain technology.
+
+        The authors begin by introducing the fundamental concepts and features of blockchain, highlighting its decentralized nature, cryptographic security, and immutability. They then delve into the economics of blockchain, exploring its potential impact on various sectors, including finance, supply chain management, and intellectual property.
+
+        The chapter covers key topics such as token economics, initial coin offerings (ICOs), and the role of smart contracts in facilitating decentralized applications. It also discusses the economic implications of blockchain, including its potential to disrupt traditional intermediaries, enhance transparency, and enable new business models.
+
+        The authors provide a clear and accessible overview of blockchain economics, making it suitable for readers seeking a foundational understanding of the subject. They offer insights into the economic incentives driving blockchain adoption and the challenges associated with scalability, governance, and regulatory frameworks.
+
+        Overall, this chapter serves as an informative resource for researchers, practitioners, and policymakers interested in understanding the economic underpinnings of blockchain technology. It provides a solid starting point for further exploration and research in the field of blockchain economics.
+
+        In this chapter, Chen, Cong, and Xiao provide a concise introduction to blockchain economics and its implications for efficient decision-making. The authors explore the fundamental economic concepts underlying blockchain technology, including incentives, trust, and decentralization. They delve into the unique features of blockchain ecosystems and their economic implications.
+
+        The chapter offers a comprehensive overview of the economic factors that shape the functioning of blockchain networks. It discusses topics such as token economics, consensus mechanisms, and the role of miners and validators. The authors also explore the impact of blockchain on traditional industries and discuss potential economic applications and challenges.
+
+        The research presents a well-structured and accessible introduction to the field of blockchain economics, making it a valuable resource for readers seeking to understand the economic foundations of blockchain technology. The chapter serves as a starting point for further exploration of blockchain's economic implications and provides insights into the potential transformative effects of this emerging technology.
+
+        Overall, Chen, Cong, and Xiao's chapter provides a solid foundation in blockchain economics, combining theoretical concepts with practical examples. It is recommended for researchers, practitioners, and anyone interested in gaining a deeper understanding of the economic aspects of blockchain technology.
+
+        digitization of information, which can be broadly interpreted to include digitization of assets
+
+        digital technology helps overcome limits in offline markets, digitization alone is insufficient. .... as the lack of trust among anonymous agents or in an open system is the key obstacle for economic exchanges
+
+        By providing decentralized consensus, block-chains allow peers distant from and potentially unknown to one another to interact, transact, and contract without relying on a single centralized trusted third party.
+
+        we focus on the key economic issues brought forth by the technological innovations and associated applications
+
+        talking about cryptocurrencies and tokens... We leave it out for separate discussion...cryptocurrencies and tokens are also closely related to the literature on monetary economics, banking, and platform economics ... We therefore refer the readers to studies
+
+        our goal is to first clarify from an economic perspective what blockchains are (or envisioned to be) and why they are (or would be) use-ful and then introduce a generalized concept of desirable features together with a conjecture of their irreducible tension
+
+        Section 2 defines the general concept of blockchain and explains its main advantages over traditional systems.
+
+        blockchain is a distributed system that stores time-ordered data in a continuously growing list of blocks. Each block contains information on transactions and business activities, and the entire network uses a consensus algorithm to reach an agreement on which block will be attached to the current recognized chain of blocks
+
+        In our opinion, the core functionality of the technology lies in the provision of decentralized consensus....decentralization is a matter of degree
+
+        blockchains aim to provide a trusted system or environment for economic agents to interact..."Trusted" in computer sci-ence means carrying out transactions in a fault-tolerant way
+
+        overemphasizing transparency or anonymity provides a misleading or incomplete picture of the benefits of decentralization. We attempt to give a definitive answer highlighting three core benefits of decentralization, each is a question of degree. Blockchain provides the building blocks for a trust system: 1) Preventing single point of failure, 2) Reducing market power and enabling stakeholding, 3) Enabling value exchange, asset traceability, and information interaction
+
+        A skeptical view is that excitement about blockchain is merely excitement about a database upgrade. However, even permissioned and private blockchains represent important innovations rather than mere database upgrades for the following reasons: the consensus generation process, though not fully decentralized, is often more decentralized than traditional systems; more importantly, the immutability of blockchain records coupled with proper encryption algorithms can enable proprietary databases (permissioned nodes or private blockchains) to interact to produce useful information aggregation, verification, and exchanges, all without sacrificing data pri-vacy
+
+        zero-knowledge-proof (ZKP) on top of blockchains enable multi-party computations (MPCs) applications, such as allow auditing firms to preserve proprietary information by exchange encrypted information when auditing transactions.
+
+        Section 3 introduces protocol games and design before highlighting the three desirable features of blockchain design and the seemingly irreducible tension among them.
+
+        Games under consensus protocols: What economics brings to the table for consensus protocols are the concepts of equilibrium (and potential multiplicity), incentive compatibility (Bitcoin's mining protocol is an instance of incentive compatible protocol), and mechanism design (feasibility).
+
+        Proof-of-work protocol, selfish and stubborn miners ".... equilibria under PoW are far from being well understood." Exceptional price volatility arises because PoW implements a passive monetary policy that fails to modulate cryptocurrency demand shocks, see Saleh(2019), \textit{Volatility and Welfare in a Crypto Economy}, for this point theoretically formalized.
+
+        Alternative protocols: Byzantine fault tolerance (BFT), and variants offer good performance for small numbers of replicas. Proof-of-stake (PoS) creator of the next block is chosen via various combinations of random selection and wealth-size or wealth-age. Saleh (2019a), annotated here, provides the first formal economic model of PoS and establishes conditions under which PoS generates consensus, precluding a persistent forking equilibrium. proof-of-burn (PoB), to record new blocks, one has to "burn" tokens. PoB implements an active albeit ad hoc monetary policy that modulates cryptocurrency demand shocks
+
+        Blockchain impossibility triangle. we argue that almost all tradeoffs can be interpreted as manifestations of the tension among decen-tralization, scalability, and consensus (formation). we also mention how practitioners are still actively working on layer 1 protocol innovations and layer 2 business model innovations to resolve the seeming impossibility triangle.  consensus is hard to achieve. In fact, Fischer et al. (1982) show that there is no guarantee that an asynchronous network can agree on a single outcome. We believe that sacrificing some decentrali-zation is a promising direction and enterprise blockchains are going to be the major trend for blockchain applications. Trust combined with effi-ciency can disrupt existing business models and relationships Besides exploring solutions to the challenge of the impossibility triangle, another fruitful path could be to clearly identify the need in particular applications and design the protocols and business models correspondingly
+
+        Section 4 examines key economic issues surrounding the technology, such as network security, Overconcentration, energy consumption, adoption limitation, Multi-party computation and permissioned blockchains and Smart contracting and 7) Information aggregation and distribution with a particular effort to underscore two hitherto underexplored information-related dimensions i.e., information distribution and aggregation in decentralized systems, as well as the innovation of permissioned blockchains in enabling better multi-party computation and information exchanges.
+
+        Network security: Once we fix the consensus protocol, there could be a number of strategies that attackers/malicious nodes in the network could deploy
+
+        Overconcentration: the incentives for consensus generation seem to lead to an industrial organization with a perceived tendency for concentration. risk sharing constitutes a natural force against decentralization and gives rise to mining pools
+
+        energy consumption: empirical evidence that cryptomining crowds out other economic activities and may result in net welfare loss, Logically, Bitcoin price cannot be the long-term and only driver for the high energy consumption.
+
+        Adoption: limited adoption prob-lem arises endogenously in PoW blockchains. Increased transaction demand increases the fees, which induce recordkeepers to enter the net-work (for permissionless blockchains). The increased network size then protracts the consensus process and delays transaction confirmation. Users adopt only if they possess extreme insensitivity to delays, limiting a PoW payments blockchains widespread adoption
+
+        Multi-party computation and permissioned blockchains: Permissioned blockchains are widely used as a distributed database system that could enable MPC. Auditors could greatly improve audit-ing efficiency if the auditors automate information verification of clients' transaction with minimum sharing of their clients' information with other auditors, thanks to zero-knowledge protocols that preserve data privacy and integrity. This collaboration among auditors does not require a third party to monitor or intermediate
+
+        smart contracts: smart contracts can be robust to renegotiation, effects of price commitments via smart contracts on firm competition and value. SC limitations: 1) it cannot enforce the transfer of ownership of offline assets, 2) it has been combined with IoTs and oracles to acquire information off-chain; 3) it is not a panacea for incomplete contracting: contingencies traditional contracts cannot specify are also hard to program into smart contracts
+
+        Information aggregation and distribution: broader informational implica-tion of blockchains. for a decen-tralized consensus system to be robust to single points of failure, there has to be some degree of information distribution, even encrypted. greater information in the public domain would lead to market participants to tacitly collude more, hurting consumer welfare. Blockchains and smart contracts expand the set of possible dynamic equilibria leading to social welfare and consumer surplus that could be higher or lower than in a traditional world. token weighting generally discourages truthful voting and erodes the platform's informa-tion aggregation for prediction
+
+        Section 5 summarizes promising future directions for research and for industry development. Digital technology rebuilds the dynamics and relations among economic agents, potentially turning competition to collaboration, integrating seg-mented markets, and enabling consumers to participate and benefit more from business enterprises. Digitized information and functional trust constitute the hallmarks of a digital economy
+    },
+    comment      = {Vitalik was among the first to put forth the scalability trilemma that is widely recognized among practitioners: it is difficult to achieve decentralization, security, and scalability at the same time Brewer (2000) conjectured even earlier in a talk that it is impossible for a distributed data system to simultaneously pro-vide consistency, availability, and partition tolerance. This was proven later by Gilbert and Lynch (2002).  Abadi and Brunnermeier (2018) gave an insightful and more compre-hensive discussion of a similar trilemma from an economic perspective. When a blockchain is decentralized and correct, the lack of dynamic rent by various recordkeepers necessarily implies that the system is costly; when the system is decentralized and maintained at low cost, record\-keepers may misreport; when the consensus is correct and maintenance of the system is cheap, the outcome is incompatible with free entry and information portability (compared with traditional reputation-based sys-tem) conditions.},
+}
+@article{sockin23a,
+    title        = {Decentralization through Tokenization},
+    author       = {Sockin, Michael and Xiong, Wei},
+    year         = 2023,
+    journal      = {The Journal of Finance},
+    volume       = 78,
+    number       = 1,
+    pages        = {247--299},
+    doi          = {https://doi.org/10.1111/jofi.13192},
+    url          = {https://onlinelibrary.wiley.com/doi/abs/10.1111/jofi.13192},
+    abstract     = {We examine decentralization of digital platforms through tokenization as an innovation to resolve the conflict between platforms and users. By delegating control to users, tokenization through utility tokens acts as a commitment device that prevents a platform from exploiting users. This commitment comes at the cost of not having an owner with an equity stake who, in conventional platforms, would subsidize participation to maximize the platform's network effect. This trade-off makes utility tokens a more appealing funding scheme than equity for platforms with weak fundamentals. The conflict reappears when nonusers, such as token investors and validators, participate on the platform.},
+    annote       = {
+        Outline: price model
+
+        compare the conventional equity-based funding scheme, in which equity conveys both control and (residual) cash flow rights, to several token-based schemes.
+
+        The utility token price $P$ is given by
+
+        \begin{equation} 
+        
+            P = \exp{\left((1-\eta_{c})\tau_{\varepsilon}^{-1/2}z^{T}+A+\frac{1}{2}\eta_{c}^{2}\tau_{\varepsilon}^{-1}\right)}\Phi\bigl(\eta_{c}\tau_{\varepsilon}^{-1/2}-z^{T}\bigr)-\kappa, 
+        
+        \end{equation}
+
+        where $z^{T}={\sqrt{\tau_{\varepsilon}}}({\hat{A}}^{T}-A)$.
+
+        Without investors (users only) the hybrid equity-utility token price $P$ is given by
+
+        \begin{equation} 
+        
+            P = \exp{\left(A+\frac12\left((1-\eta_{c})^{2}+\eta_{c}^{2}\right)\tau_{\varepsilon}^{-1}\right)} -\kappa, 
+        
+        \end{equation}
+
+        where $\kappa$.
+
+        With investors and users the hybrid equity-utility token price $P$ is given by
+
+        \begin{equation} 
+        
+            P = \frac{{\frac{1}{2}}\delta_{T}U+(1-s_{I})\frac{1}{2}\delta_{T}U+s_{I}\gamma\,\Phi\bigl(-z_{I}^{E T}\bigr)}{n+N+\Phi\bigl(-z_{I}^{E T}\bigr)}-s_{I}\gamma+p_{I}^{E T}, 
+        
+        \end{equation}
+
+        where $p_I^{ET}$ is a price discount/premium for the marginal user.
+
+        For a utility token with validators/miners, a strategic attack succeeds with probability
+
+        \begin{equation} 
+        
+        p_{s}=\frac{3}{4}\frac{\delta_{T S}U\left(\hat{A}_{T C S}(\delta_{T S})\right)}{\gamma\,\Phi\Bigl(\sqrt{\tau_{\epsilon}}\Bigl(A-\hat{A}_{T C S}(\delta_{T S})\Bigr)\Bigr)}. 
+        
+        \end{equation}
+
+        where the transaction fee, $\delta_{T S}$ is
+
+        \begin{equation} 
+        
+        \delta_{T S}=-\frac{M-1}{\frac{\partial}{\partial\delta_{T S}}\log U\left(\hat{A}_{T C S}(\delta_{T S})\right)} 
+        
+        \end{equation}
+
+        After each round of transaction, user i has a Cobb-Douglas utility function over consumption of his own good and the good of user j according to
+
+        \begin{equation} 
+        
+        U_{i}(C_{i},C_{j})=\left(\frac{C_{i}}{1-\eta_{c}}\right)^{1-\eta_{c}}\left(\frac{C_{j}}{\eta_{c}}\right)^{\eta_{c}}, 
+        
+        \end{equation}
+
+        where $\eta_{c} \in (0, 1)$ represents the weight in the Cobb-Douglas utility function on his consumption of his trading partner's good $C_j$ , and $1 -\eta_{c}$ is the weight on consumption of his own good $C_i$. A higher $\eta_{c}$ means a stronger complementarity between the consumption of the two goods.
+
+        User $i$ has a goods endowment of $eAi$ , which is equally divided across $t = 1$ and $t = 2$. User $i$'s fundamental, $Ai $, comprises a component $A$ common to all users and an idiosyncratic component,
+
+        \begin{equation} 
+        
+        A_{i}=A+\tau_{\varepsilon}^{-1/2}\varepsilon_{i}, 
+        
+        \end{equation}
+
+        where $\varepsilon_{i} \sim{} N(0, 1)$ is normally distributed and independent across users and from $A$. The aggregate endowment A is a key characteristic of the platform. A cleverly designed platform amasses users with strong needs to transact with each other.
+
+        Outline: assumed and derived characteristics
+
+        online platform that facilitates bilateral transactions among a pool of users. There are three dates. At time 0, the developer of the platform chooses to fund the platform by issuing either conventional equity or tokens, based on a prior belief about the platform's fundamental. The choice of funding scheme also determines the control and ownership of the platform in the subsequent periods. At time $1$, potential users choose whether to join the platform, subject to a personal cost of downloading the necessary software and becoming familiar with the platform's rules and user interface. After joining the platform, a user has the opportunity to randomly match with another user to make mutually beneficial transactions at $t = 1$ and $t = 2$, which can be viewed as the short run and the long run, respectively Those who do not join initially cannot participate on the platform in either round of trading.
+
+        model a user's transaction need by his endowment in a consumption good and his preference of consuming his own good together with the goods of other users. As a result of this preference, users need to trade goods with each other, which can occur only on the platform. Consequently, there is a key network effect--each user's desire to join the platform grows with the number of other users on the platform and the size of their goods endowments.
+
+        If the developer issues equity, this leads to a group of equity holders that is represented by an owner who receives ownership and control of the platform. The owner chooses to provide a subsidy at time $1$ to attract the marginal user, whose own transaction need is relatively low and who is other-wise not incentivized to participate on the platform.
+
+        the owner can profit from charging transaction fees that increase with the transaction surplus on the platform, it internalizes the participation cost of the marginal user by providing a subsidy to all users. However, control of the platform allows the owner to exploit users at time 2 after the platform collects extensive data about them at time 1.
+
+        It is impossible to commit under the equity-based scheme, as the owner can always choose to reverse any previous commitment at time 2. This demand for commitment motivates tokenization.
+
+        Alternatively, the developer may adopt a token-based scheme. We focus on utility tokens because they represent the canonical form of tokens that entitle holders to services but not cash flows of the platform.
+
+        assume that the platform adopts a frictionless consensus protocol that confers voting rights to token holders; later, in the paper, we ex-amine the additional issues raised by protocols that require outside validators.
+
+        By issuing tokens to users who join the platform at time 1, the developer transfers control of the platform at times 1 and 2 to users through precoded algorithms, which can serve as a commitment not to exploit users by requiring their consent.
+
+        Outline: model approach
+
+        Our model features a rational expectations cutoff equilibrium Note that the expectation of the user's utility flow is with respect to the uncertainty associated with matching a transaction partner. By adopting a Cobb-Douglas utility function with quasi-linearity in wealth, users are risk-neutral with respect to this uncertainty.
+
+        the user's expected utility is monotonically increasing with his own endowment, regardless of other users' strategies, it is optimal for each user to use a cutoff strategy.  This leads, in turn, to a cutoff equilibrium, in which only users with endowments above a critical level, $\hat{A}^{E}$ , participate in the platform. This cutoff is eventually solved as a fixed point in the equilibrium to equate the fixed participation cost to the expected transaction utility of the marginal user from joining the platform. Outline: state variable
+
+        Outline: solution approach
+
+        Outline: model context
+
+        develop a model to examine tokenization as a mechanism to mitigate the tension between platforms and their users (similar to owner-manager agency conflicts in corporate finance).
+
+        commitment problem investors choose the subversive action of selling user data when transaction fees fall below the gain from selling user data, and there is no credible
+
+        We regard canonical tokens issued by a digital platform as an asset that conveys a right to the services of the platform and possible participation in its governance, but not necessarily cash flow rights -obtain a convenience yield from participating on the platform -include "payment" and "consumer" ("utility") tokens in the taxonomy of Global Digital Finance (GDF).
+
+        conflicts between online platforms and their users represent a unique challenge to the platform's design and raise questions about whether they could be disintermediated to protect consumers
+
+        two extensions of our model to illustrate the difficulty in overcoming the trade-off underlying decentralization when nonusers also participate on the platform 1) "equity tokens.", we examine a hybrid scheme that allows the platform to collect transaction fees from users and pay out the fees to token holders as dividends. giving token holders not only the right to make transactions but also the right to receive cash flows from the platform. equity token-based scheme is able to achieve the first-best outcome if the platform issues tokens only to users. However, investors may even take a majority stake to seize control of the platform, which, as we show, occurs when the platform fundamental is sufficiently weak -reintroducing the initial commitment problem. 2) we introduce a frictional consensus protocol on the platform by assuming that a group of decentralized validators compete for the right to record transactions on the blockchain in exchange for transaction fees. transaction fees are used as incentives to motivate the efforts of validators to maintain the security of the blockchain. When the platform's fundamentals are strong and the transaction fees to validators are sufficiently lucrative, validators have strong incentives to compete for the transaction fees, making the blockchain robust to any outside attack. In contrast, when the fundamentals are weak and transaction fees fall below a threshold, the reduced incentives of the validators to compete make the blockchain vulnerable to a "51\% attack" by a rogue validator, leading to an outcome similar to the subversive action explored earlier. This result re-veals that reliance on validators to maintain the security of the blockchain in tokenization may reintroduce the commitment problem because validators' interests differ from those of users.
+
+        A utility token conveys control rights to holders. However, unlike equity, a utility token does not bestow cash flow rights to the platform's profits. Because the token holders would never agree to take the subversive action against them-selves, this token-based scheme allows the platform to commit to not taking the subversive action. This utility token-based scheme captures the notion of decentralization, which underlies many decentralized crypto-based platforms, such as Filecoin, Tezos, and Decred. The simplicity of the utility token-based scheme makes it particularly appealing for highlighting the aforementioned trade-off introduced by decen-tralization
+
+        there is no incentive to hoard utility tokens because they only provide transaction benefits and only one token is needed to participate on the platform
+
+        Outline: model insights
+
+        Our key insight is that there is a cost-benefit trade-off induced by decentralization. Benefit (safeguarding users): Tokenization  protect users by shifting ownership and control of the platform to them from initial equity holders. Cost (unsubsidized participation): Removing any owner who would subsidize user participation to maximize the platform's network effect.
+
+        Comparing utility tokens to equity leads to a sharp implication: utility to-kens are more appealing for digital platforms with relatively weak demand fundamentals (i.e., aggregate transaction needs by users).
+
+        Allowing tokens to pay cash flows therefore leads to the converse of the key trade-off that we highlight--it helps cross-subsidize user participation but at the expense of reintroducing the commitment problem
+
+        in the absence of commitment, as concern about the platform's exploitation of users grows, user participation, owner profit, and social surplus are all lower, and break-down is more likely to occur.
+
+        The lack of entry subsidy implies that the token-based scheme cannot accomplish the full user partici-pation required by the first-best equilibrium. Instead, the token-based scheme serves as a compromise for platforms to precommit to not exploit users.
+
+        In settings with a hybrid equity-utility token or miners/validators, cash flow rights may lead token investors and validators, to take control of the platform, reintroducing the commitment problem.
+
+        First, utility token issuance is a less effective funding channel than equity issuance. Second, utility token prices have different determinants than equity prices and are particularly volatile because of the network effect of the platform. For utility token platforms, Because there is no owner, such platforms often resort to seignorage to provide subsidies. Seignorage acts as a transfer from existing token holders through token inflation. Such subsidization schemes are imperfect com-pared to the free or discounted services offered by centralized platforms such as Amazon and Google
+
+        the utility token-based scheme is more likely to be adopted by platforms with relatively weak fundamentals.
+
+        We note that there are two subtle issues with our analysis. 1) the commitment problem motivates the developer to retain zero stake after the ICO 2) more nuanced is the use of staged or tiered token sales to subsidize user participation.
+
+        the utility token-based scheme gives control of the platform to its users, it does not collect any transaction fees that could be used to cross-subsidize the participation of marginal users with the fees collected from heavy users. the lack of retention by devel-opers represents a commitment device rather than a signal of moral hazard or of the project's quality.
+
+        A hybrid scheme, allows the platform to collect transaction fees from users and pay out the fees to token holders as dividends Taken together, although allowing hybrid tokens to collect transaction fees helps to resolve the lack of subsidy of user participation, it reintroduces the commitment problem by attracting token investors to take control of the plat-form in some states of the world. The key shortcoming of hybrid tokens is that the platform's developer and precoded governance algorithms cannot distinguish between which token holders are users and which are investors
+
+        For utility tokens with validators, across two derived equilibria, a rogue validator has an incentive to attack the blockchain when the platform fundamental, $A$, is relatively low. analysis consequently reveals that giving control and cash flow rights to validators, as part of the tokenization scheme to decentralize the plat-form, can reintroduce the commitment problem because the interests of validators, such as miners and stakers, are not aligned with those of users.
+    },
+}
+@article{sockin23b,
+    title        = {A Model of Cryptocurrencies},
+    author       = {Sockin, Michael and Xiong, Wei},
+    year         = {Forthcoming},
+    journal      = {Management Science},
+    doi          = {10.1287/mnsc.2023.4756},
+    url          = {https://dx.doi.org/10.1287/mnsc.2023.4756},
+    abstract     = {We model cryptocurrencies as utility tokens used by a decentralized digital platform to facilitate transactions between users of certain goods or services. The network effect governing user participation, in conjunction with the nonneutrality of the token price, can cause the token market to break down. We show that token retradeability mitigates this risk of breakdown on younger platforms by harnessing user optimism but worsens this fragility when sentiment trading by speculators crowds out users. Elastic token issuance mitigates this fragility, but strategic attacks by miners exacerbate it because users' anticipation of future losses depresses the token's resale value.},
+    annote       = {
+        Systematically characterize a platform's performance arising from rich interactions of users, speculators and miners/validators and derive the resulting equilibrium token price,
+
+        \begin{equation}
+        
+            P_{t}=\frac{1}{R}\exp\left(\frac{\sqrt{\tau_{\varepsilon}}}{\lambda}\left(A_{t}-A_{t}^{\ast}\right)-\frac{1}{\lambda}y t+\frac{1}{\lambda}\zeta_{t}\right) 
+            
+        \end{equation}
+
+        where $A_{t}^{*}$ is the users' participation threshold, $\zeta_{t}$ is speculator sentiment, $\lambda > 0$ parameterizes a speculators' short selling cutoff policy, $y_tz$ is token demand, and $A_{t}$ is the aggregate endowment. Hence, the state variables (structure of public information for all users) are $\mathcal{I}_{t}=\left\{A_{t},y_{t},Q_{t},\zeta_{t}\right\}$; the demand fundamental, time-varying token supply, user optimism and speculator sentiment. $A_{t}$, the aggregate endowment or demand fundamental, is a key characteristic of the platform. $A_{t}$ follows a random walk with a constant drift $\mu\in\mathbb{R}$:
+
+        \begin{equation} 
+        
+            A_{t}=A_{t-1}+\mu+\tau_{\varepsilon}^{-1/2}\varepsilon_{t+1}^{A},  
+            
+        \end{equation}
+
+        where $\varepsilon_{t+1}^{A}\,\sim\,i\,\dot{\imath}d\,\,\mathcal{N}\,(0,\,1)$, and $\tau$ is a measure of dispersion among users in the platform.
+
+        In this framework cryptocurrency returns have three components: 1) a convenience yield of the marginal user (dividend), 2) the token price appreciation (capital gain), and 3) an embedded discount in the token price to compensate users for their participation cost,
+
+        \begin{equation}
+        
+            R=\frac{\left(1-\beta\right)U_{t}^{\textasteriskcentered}}{P_{t}}+\frac{E\left[P_{t+1}\mid Z_{t}\right]}{P_{t}}-\frac{\kappa}{P_{t}}. 
+            
+        \end{equation}
+
+        Where $\beta$ a fraction and $U_t$ is the total transaction surplus on the platform,
+
+        \begin{equation}
+        
+            U_{t}=e^{A_{t}+\frac{1}{2}((1-\eta_{c})^{2}+\eta_{c}^{2})\tau_{\epsilon}^{-1}}\Phi\left((1-\eta_{c})\,\tau_{\varepsilon}^{-1/2}+\frac{A_{t}-A_{t}^{\textasteriskcentered}}{\tau_{\varepsilon}^{-1/2}}\right)\Phi\left(\eta_{c}\tau_{\varepsilon}^{-1/2}+\frac{A_{t}-A_{t}^{\textasteriskcentered}}{\tau_{\varepsilon}^{-1/2}}\right), 
+            
+        \end{equation}
+
+        where $\eta_{c} \in (0, 1)$ represents the weight in the Cobb-Douglas utility function on a user's consumption of her trading partner's good, and $1 -\eta_{c}$ is the weight on consumption of her own good. A higher $\eta_{c}$ indicates a stronger complementarity between the consumption of the goods obtained from trading.
+
+        The authors' focus is on utility token price dynamics and platform stability of decentralized digital platforms, but the results also apply to coins and altcoins. In particular, their role in 1) funding digital platforms, 2) serving as investment assets for speculators, and 3) decentralized consensus protocols. Here tokens are used by a platform to facilitate transactions between users of certain goods or services (i.e. not a general means of exchange).
+
+        This model identifies a key issue: the network effect endemic to utility token platforms can lead to fragility when a rigid token supply curve interacts with a demand curve that is subject to a network effect and nonneutrality of the token price. This instability is mitigated by retradability, elastic issuance, and user optimism.  This instability is exacerbated by reductions in the token's expected retrade value, arising when speculator sentiment crowds out users and users' anticipate strategic miner attacks. Although miner attacks do not directly lead the platform to fail, this model reveals that users' anticipation of future losses from miner attacks may exacerbate the fragility of the token market, especially when the mining cost is high. In this formulation, blockchain speculation differs from other asset classes, such as stocks and commodities, where speculation can increase price volatility but not lead to price and demand both collapsing to zero.  The authors canvas design elements that may make a token more robust.
+
+        Token retradability is a powerful dual-edged tool for enhancing/harming platform performance. It enhances when it capitalizes on user optimism, yet the ability of retradability to harness the optimism of users to mitigate platform stability declines as the platform matures. Token retradability harms when it incentivizes speculator enthusiasm which acts as a tax on user participation and exacerbates the platform's instability -having outsiders with whom there is a conflict of interest with users exacerbates the instability of cryptocurrency platforms.
+
+        An important aspect of the model is how the weights of the token's convenience yield and capital gain transition over the life of the platform. When the platform is young (few tokens issued), users benefit more from the token price appreciation. When the platform matures (many tokens issued), users benefit mostly from the convenience yield from transactions on the platform as more mature platforms have lower expected log token prices, higher log token price volatility, and these life-cycle effects are more pronounced for weaker growth rates. Suggesting, that large market capitalization tokens, such as Ethereum, might be more fragile and thus have more pronounced price volatility than small capitalization tokens in otherwise identical platforms.
+
+        With the addition of mining and strategic attacks, the miners' common mining efficiency $\xi_t$ becomes an additional state variable, measured by inversely parameterizing the miner's cost of mining. Strategic attacks occur when either $A_t$ or $\xi_t$ falls below a critical boundary.  This boundary is explored in detail, showing it may be possible for both a no-attack equilibrium and an attack equilibrium to be self-fulfillin. Furthermore, they point out the expectation of strategic attacks generates an adverse feedback loop that is novel to decentralized cryptocurrency platforms. These insights are valid for other types of attacks, such as a selfish mining attack, and other consensus protocols, such as proof of stake, provided that the interests of validators may conflict with those of users.
+
+        Several empirical implications for cryptocurrency return patterns flow from this model, both time-series patterns (e.g., momentum, reversal, life-cycle effects, relation to investor attention, chance of strategic attacks) and cross-sectional patterns (e.g., size effect). Five (5) propositions are proved in the course of the model development.
+    },
+}
 @article{cong20,
-  title        = {{Tokenomics: Dynamic Adoption and Valuation}},
-  author       = {Cong, Lin William and Li, Ye and Wang, Neng},
-  year         = 2020,
-  month        = {08},
-  journal      = {The Review of Financial Studies},
-  volume       = 34,
-  number       = 3,
-  pages        = {1105--1155},
-  doi          = {10.1093/rfs/hhaa089},
-  issn         = {0893-9454},
-  url          = {https://doi.org/10.1093/rfs/hhaa089},
-  keywords     = {E42 - Monetary Systems; Standards; Regimes; Government and the Monetary System; Payment Systems G12 - Asset Pricing; Trading volume; Bond Interest Rates; L86 - Information and Internet Services; Computer Software},
-  abstract     = {We develop a dynamic asset pricing model of cryptocurrencies/tokens that allow users to conduct peer-to-peer transactions on digital platforms. The equilibrium price of tokens is determined by aggregating heterogeneous users' transactional demand, rather than discounting cash flows as is done in standard valuations models. Endogenous platform adoption builds on user network externality and exhibits an $S$-curve: it starts slow, becomes volatile, and eventually tapers off. The introduction of tokens lowers users' transaction costs on the platform by allowing users to capitalize on platform growth. The resultant intertemporal feedback between user adoption and token price accelerates adoption and dampens user-base volatility.},
-  eprint       = {https://academic.oup.com/rfs/article-pdf/34/3/1105/36264622/hhaa089.pdf},
-  annote       = {TBC.},
-}
+    title        = {Tokenomics: Dynamic Adoption and Valuation},
+    author       = {Cong, Lin William and Li, Ye and Wang, Neng},
+    year         = {2020},
+    month        = {08},
+    journal      = {The Review of Financial Studies},
+    volume       = {34},
+    number       = {3},
+    pages        = {1105-1155},
+    doi          = {10.1093/rfs/hhaa089},
+    issn         = {0893-9454},
+    url          = {https://dx.doi.org/10.1093/rfs/hhaa089},
+    abstract     = {We develop a dynamic asset pricing model of cryptocurrencies/tokens that allow users to conduct peer-to-peer transactions on digital platforms. The equilibrium price of tokens is determined by aggregating heterogeneous users' transactional demand, rather than discounting cash flows as is done in standard valuations models. Endogenous platform adoption builds on user network externality and exhibits an S-curve: it starts slow, becomes volatile, and eventually tapers off. The introduction of tokens lowers users' transaction costs on the platform by allowing users to capitalize on platform growth. The resultant intertemporal feedback between user adoption and token price accelerates adoption and dampens user-base volatility.},
+    annote       = {
+        Given a specific blockchain platform, populated by a continuum of users with diverse transaction needs, the authors derive a continuous-time Markov equilibrium representation of the effervescent-token price,
 
+        \begin{equation}
+
+          P\left(A_{t}\right) = \frac{N\left(A_{t}\right)S\left(A_{t}\right)A_{t}}{M}\left(\frac{1-\alpha}{r-\mu^{P}\left(A_{t}\right)}\right)^{\frac{1}{\alpha}}
+
+        \end{equation}
+
+        where: $A_{t}$ is the state variable measuring platform productivity. $S\left(A_{t}\right)$ measures the aggregate transaction needs, and could be approximated by daily transaction volume. $N\left(A_{t}\right)$ is the platform user base, and could be approximated by daily active addresses. Finally, $A_{t}$ evolves according to the geometric Brownian motion stochastic differential equation,
+
+        \begin{equation}
+
+        \frac{d A_{t}}{A_{t}} = \widehat{\mu}^{A}\!d t+{\sigma}^{A}\!d\widehat{Z}_{t}^{A}
+
+        \end{equation}
+
+        where $\widehat{Z}_{t}^{A}$ is a standard Brownian motion under the physical measure and $\widehat{\mu}^{A}$ and ${\sigma}^{A}$ are constant parameters.
+
+        When platform productivity, $A_{t}$, is sufficiently high, all agents participate with probability one at all times, $s \geq t$, such that
+
+        \begin{equation}
+
+        \overline{P}\left(A_{t}\right) = \frac{\overline{S}A_{t}}{M}\left(\frac{1-\alpha}{r-\mu^{A}}\right)^{\frac{1}{\alpha}}
+
+        \end{equation}
+
+        where $\overline{S}$ is the aggregate transaction needs of all agents.
+
+        The authors construct a dynamic feedback loop between user adoption and the responsiveness of the token price to expectations regarding the future growth of platform adoption. In this construction, tokens derive value by enabling users to conduct economic transactions on the digital platform, rendering the token a hybrid of money and investable assets. Transactions within this framework could encompass value transfers and smart contracting.
+
+        The assumed and derived characteristics of the platform are: 1) Token supply is fixed, 2) monetary neutrality ensures that the token market is always stable 3) there are network effects for the platform from user adoption, 4) users are heterogeneous, 5) user utility from platform activities constitutes only a small part of their total utility, 6) the token is required to make payment for specific economic transactions (i.e. not a medium for generic payments).
+
+        Model approach: Consider financial and the real sectors: the financial side operates through the endogenous determination of token prices, whereas the real side manifests itself in the user adoption.  The tokenless model is analogous to the standard money models of holdings.
+
+        Solve the model via the change-of-measure technique (see Duffie(2001))
+
+        Study the joint determination of user adoption with network effects and token valuation in a framework that highlights user heterogeneity.
+
+        The network externalities results, and intertemporal feedback effect results are applicable to platforms owned by trusted third parties and permissioned blockchains as well as permissionless blockchains. Other key platform properties that flow from the assumptions and analysis: a tokenized platform user base is larger and more stable than that of a tokenless platform that has the same productivity process but uses the numeraire goods as means of payment token value depends on the platform's productivity user adoption follows a log-Normal S-curve platform adoption dynamics influences token asset pricing dynamics
+
+        Users make a two-step decision on (1) whether to adopt by paying a participation cost to become a platform user, and, if so, (2) the real token balance. The token market clears by equating user demand and the fixed supply.
+
+        Holding tokens as means of payment incurs a carry cost, the forgone return from investing in financial assets. This cost is partly offset by the expected token price appreciation. Various figures illustrate the model dynamics and parameters.
+    },
+}
 @article{cong22,
-  title        = {{Token-based platform finance}},
-  author       = {Cong, Lin William and Li, Ye and Wang, Neng},
-  year         = 2022,
-  journal      = {Journal of Financial Economics},
-  volume       = 144,
-  number       = 3,
-  pages        = {972--991},
-  doi          = {10.1016/j.jfineco.2021.10},
-  url          = {https://ideas.repec.org/a/eee/jfinec/v144y2022i3p972-991.html},
-  keywords     = {Blockchain; Cryptocurrency; Dynamic corporate financing; Durable goods; Gig economy; Optimal tokens},
-  abstract     = {We develop a dynamic model of a platform economy where tokens serve as a means of payment among platform users and are issued to finance investment in platform productivity. Tokens are optimally rewarded to platform owners when token supply (normalized by productivity) is low and burnt to boost franchise value when the normalized supply is high. Although token price is determined in a liquid market, the platform's financial constraint generates an endogenous token issuance cost that causes underinvestment through the conflict of interest between insiders (owners) and outsiders (users). Blockchain technology mitigates underinvestment by addressing the owners' time inconsistency problem.},
-  annote       = {TBC.},
-}
+    title        = {Token-based platform finance},
+    author       = {Cong, Lin William and Li, Ye and Wang, Neng},
+    year         = 2022,
+    journal      = {Journal of Financial Economics},
+    volume       = 144,
+    number       = 3,
+    pages        = {972--991},
+    doi          = {10.1016/j.jfineco.2021.10},
+    url          = {https://ideas.repec.org/a/eee/jfinec/v144y2022i3p972-991.html},
+    keywords     = {Blockchain; Cryptocurrency; Dynamic corporate financing; Durable goods; Gig economy; Optimal tokens},
+    abstract     = {We develop a dynamic model of a platform economy where tokens serve as a means of payment among platform users and are issued to finance investment in platform productivity. Tokens are optimally rewarded to platform owners when token supply (normalized by productivity) is low and burnt to boost franchise value when the normalized supply is high. Although token price is determined in a liquid market, the platform's financial constraint generates an endogenous token issuance cost that causes underinvestment through the conflict of interest between insiders (owners) and outsiders (users). Blockchain technology mitigates underinvestment by addressing the owners' time inconsistency problem.},
+    annote       = {
+        Outline: price model blockchain technology can foster commitment not to expropriate value through excessive seignorage
 
+        State variable -normalized token supply assumed and derived characteristics model approach solution approach
+
+        Offers a corporate finance perspective of protocol design. Develop analysis, applicable to both traditional and blockchain-based platforms, of a dynamic model of digital platform equilibrium dynamics of token-based communities.
+
+        Users acquire tokens as a means of payment, and their holdings are exposed to the fluctuation of token price
+
+        entrepreneur (representing platform owners) manages token issuance by solving a dynamic problem of token-based payout and token-financed investment in platform productivity
+
+        token market-clearing condition determines the evolution of the token price
+
+        normalized token supply is the key state variable
+
+        it is high (i.e., the system is "inflated"), the platform cuts back investment and refrains from payout. To reduce token supply and boost token price, the platform may find it optimal to buy back tokens, but doing so requires costly external funds. The financing cost of token buyback is the key friction that causes underinvestment in productivity. .
+
+        Applicable to platforms that are a unique marketplace for certain transactions Consumers demand token for convenience yield Platform owners manages token supply a) Mint new tokens b) "Burn" existing ones (token signatures placed into an irretrievable public wallet, visible by all nodes) Owner value is the discounted value of all tokens sales net of buyback costs When buying back tokens, the entrepreneur has to raise costly external funds. External contributors can increase the platform's usefulness
+
+        Transactions on the platform are settled with native tokens.
+
+        several unique insights First, tokens are akin to durable goods but defy Coase's conjecture (Coase(1972)) that durable-good monopolists have no power to extract rents. "Under a growing token demand, the entrepreneur optimally spreads out token payouts over time, trading off between milking the system now or in the future. The entrepreneur balances the growth of token supply with productivity. Specifically, the productivity-normalized token supply is endogenously bounded." Second, underinvestment arises from the conflict of interest between the entrepreneur and platform users. When tokens are issued to finance investment, token supply increases but the investment outcome is random. If productivity improves, both the entrepreneur and users benefit; otherwise, the users are free to reduce token holdings or even abandon the platform, while the entrepreneur, now facing an inflated system, may have to raise costly external funds to buy back tokens. Such asymmetry dampens the entrepreneur's incentive to invest. The underinvestment in turn reduces user welfare, the equilibrium token price, and eventually, the entrepreneur's value from token payouts. The root of the underinvestment problem is the entrepreneur's time inconsistency. If the entrepreneur is able to commit against underinvestment, the users would demand more tokens, which then increases the token price and the value of entrepreneur's token payouts. However, time inconsistency arises as the predetermined level of investment (optimal ex ante) can be deemed suboptimal ex post as the conflict of interest arises between the entrepreneur and platform users.
+
+        Blockchain technology enables commitment to predetermined rules of investment and can thus add value by addressing entrepreneurial time inconsistency.
+
+        show the value of commitment introduced by blockchains
+
+        analyze tokens as monetary assets that facilitate transactions in a fully dynamic setting rather than tokens as dividend-paying assets and their difference from traditional securities
+
+        analyze the optimal token supply and explore new questions on the dynamics of platform investment and financing, the conflict of interest between the entrepreneur and users,
+
+        Users hold tokens as a means of payment on the platform, enjoying convenience yield that increases in platform productivity. the more productive a platform is, the more activities (and transactions) it supports.
+
+        we allow the convenience yield to depend on the number of users. The user base evolves endogenously for two reasons. First, the stochastic growth of productivity directly affects adoption. Second, users' expectations of future token price varies over time.
+
+        A intertemporal complementarity amplifies the effects of productivity growth on user-base dynamics --when potential users expect productivity growth and more users to join in future, they expect token price to appreciate and thus have a stronger incentive to adopt now.
+
+        The platform's investment in productivity is financed by token issuances. The platform can increase token supply and pay tokens to a pool of contributors for their efforts and resources that improve productivity.
+
+        contributors sell tokens to users who value the convenience yield and thus are the natural buyers, the amount of resources the platform can raise by issuing tokens depends on the token price. Token price is determined endogenously by the users' token demand and the platform's supply
+
+        The entrepreneur's value is the present value of the tokens she is paid net the costs of token buybacks. In the Markov equilibrium, the entrepreneur's value is a function of the current platform productivity and token supply, which are the two state variables
+
+        The marginal value of productivity is positive
+
+        The marginal value of token supply is negative
+
+        In order to protect the continuation value (i.e., the present value of future token payout), the entrepreneur may even find it optimal to buy back tokens (through external financing) and burn them out of circulation
+
+        A key friction in our model is that when buying back tokens, the entrepreneur has to raise costly external funds.
+
+        every time more tokens are issued, the entrepreneur's expectation of costly future buyback changes accordingly.
+
+        the entrepreneur's cost of issuing one more token (i.e., the marginal decline of continuation value) is larger than the market price of tokens (i.e., the users' valuation of tokens). This wedge causes the platform to under-invest in productivity.
+
+        characterizing the optimal token-management strategy: investment, payout, and buyback
+
+        the commitment of predetermined token-supply rules that, we show, are valuable in addressing the underinvestment problem.
+
+        we consider a constant rate of token issuances that finance investment. commitment mitigates the underinvestment problem by severing the state-by-state linkage between investment and the token issuance cost
+
+        our analysis starts from the fully discretionary supply of tokens. comparing the discretionary case with the predetermined case, we are able to identify the value added by commitment and to partly explain the popularity of blockchain technology among the platform businesses
+
+        for platforms with endogenous productivity growth, their tokens are inherently stable
+
+        our model provides insight on the equilibrium dynamics of token-based communities and provides a guiding framework for practitioners various token offering schemes observed in practice can be viewed as special (suboptimal) cases
+
+        Our paper connects the literature on platform economics to dynamic corporate finance, especially the studies emphasizing the role of financial slack and issuance costs. Instead of cash management, we analyze platforms' token-supply management when investment induces user network effects and, importantly, the token price varies endogenously as users respond to supply variation
+
+        We share the view on platform tokens with Brunnermeier et al. (2019): a platform is a currency area where a unique set of economic activities take place and its tokens derive value by facilitating the associated transactions
+
+        endogenizing token supply and incorporating the entrepreneur's long-term interests (franchise value), which allows us to explore new issues concerning the dynamics of optimal platform investment and financing, the conflict of interest between the entrepreneur and users, and the role of blockchain technology in platform economics
+
+        Our focus is on the use of tokens for platform finance and endogenous adoption, regardless of the consensus protocol and level of decentralization issues
+
+        our paper adds to the discussion on token price volatility and stablecoins On the demand side, high token price volatility could be an inherent feature of platform tokens due to technology uncertainty and endogenous user adoption We endogenize both the demand for tokens driven by users' transaction needs and dynamic adoption, and the supply of tokens for platform development and the founders' rent extraction. We show that the optimal token supply strategy stabilizes the token price
+
+        we emphasize decentralized contributors' effort post-launch
+
+        three types of agents interact in a continuous-time economy: an entrepreneur (used inter-changeably with "platform owners"), a pool of contributors, and a unit measure of users.
+
+        entrepreneur, representing the group of platform founders, key personnel, and venture investors, designs the platform's protocol
+
+        Contributors, who represent individual miners (transaction ledger keepers), third-party app developers, and other providers of on-demand labor in practice, devote efforts and resources required for the operation and continuing development of the platform. Contributors include labor supply in a "platform economy" or "gig economy" such as ride-share platforms
+
+        Users conduct peer-to-peer transactions and realize trade surpluses on the platform.
+
+        A generic consumption good serves as the numeraire.
+
+        platform whose productivity (synonymous with quality), At , evolves as follows 
+        
+        \begin{equation} 
+        
+        \frac{d A_{t}}{A_{t}}=L_{t}d H_{t}, 
+        
+        \end{equation} 
+        
+        where Lt is the decentralized contribution the entrepreneur gathers through token payments to grow At .
+
+        dHt is an investment efficiency shock, 
+        
+        \begin{equation} 
+        
+        d H_{t}=\mu^{H}d t+\sigma^{H}d Z_{t}. 
+        
+        \end{equation} 
+        
+        Here Zt is a standard Brownian motion that generates the information filtration. At broadly captures marketplace efficiencies, network security, processing capacity, regulatory conditions, users' interests, the variety of activities feasible on the platform
+
+        we do not explicitly model contributors' decision-making but instead specify directly the required numeraire value of compensation for Lt to be F (Lt , At ), which is increasing and convex in $L_t$ and may also depend on $A_t$ .
+
+        Given $A_t$ , to gather $L_t$ , the platform needs to issue F (Lt , At )/Pt units of new tokens to workers, which adds to the total amount of circulating tokens, Mt .
+
+        Tokens facilitate the acquisition of ondemand labor by avoiding the limited commitment on the part of the platform that arises in the implementation of deferred compensation
+
+        tokens also reduce the platform's exposure to workers' limited commitment.
+
+        Finally, $L_t$ can also include the capital received from crowd-based investors.
+
+        A crucial difference from CLW is that we endogenize $A_t$ and the token supply $M_t$ .
+
+        users can conduct transactions by holding tokens. We use $x_{i,t}$ to denote the value (real balance) of agent $i$'s holdings in units of numeraires
+
+        We allow users' transaction needs, $ui$ , to be heterogeneous.
+
+        Pt denotes the unit price of a token in terms of the numeraire.
+
+        four terms give the incremental transaction surpluses from platform activities (utility). first corresponds to the payment convenience yield given in Eq. (3). second is the expected capital gains from holding $ki,t$ units of tokens third is the participation cost the last term is the financing) cost of holding $ki,t$ units of tokens
+
+        implicitly assume a liquid secondary market for tokens. Hence, after receiving tokens, decentralized contributors can immediately sell tokens to users. Contributors can also be users themselves, and the model is not changed as long as the utility from token usage and the disutility from contributing $L_t$ (which gives rise to $F (\cdot{} )$) are additively separable.
+
+        We conjecture and later verify that in equilibrium, the token price, $P_t$ , evolves as 
+        
+        \begin{equation} 
+            
+            d P_{t}=P_{t}/d_{t}^{P}d t+P_{t}\sigma_{t}^{P}d Z_{t}, 
+        
+        \end{equation} 
+        
+        where and are endogenously determined. The equilibrium token price is given by 
+        
+        \begin{equation} 
+        
+            P_{t}=\frac{N_{t}^{\gamma}U_{t}A_{t}}{M_{t}}\left(\frac{1-\alpha}{r-\mu_{t}^{p}}\right)^{\frac{1}{\alpha}}. 
+        
+        \end{equation} 
+        
+        Token price increases in $N_t$ . The larger the user base, the higher the trade surplus individual participants can realize by holding tokens, and the stronger the token demand. The price-to-user base ratio increases in the productivity, the expected price appreciation, and the network participants' aggregate transaction need, while it decreases in the token supply Mt
+
+        The problem faced by a token-based platform is reminiscent of a durable-good monopoly problem (e.g., Coase, 1972 First, token issuance permanently increases the supply. When issuing tokens to finance investment or payout, the entrepreneur is competing with future selves. Second, given a zero physical cost of creating tokens, the Coase intuition seems applicable: The entrepreneur can be tempted to satisfy the residual demand by ever lowering token price as long as the price is positive (i.e., above the marginal cost of production). Thus, users wait for lower prices, driving the token price to zero.
+
+        Our model differs from the Coasian setting in two aspects. First, even though the physical cost of producing tokens is zero, the dynamic token issuance cost increases in the token supply as we show in the next section. This is reminiscent of the result in Kahn (1986) that the Coase intuition does not hold in the presence of increasing marginal cost of production. Second, in contrast to theories of durable-good monopoly, token demand in our model is not stationary; in fact, it increases geometrically with the endogenously growing At , so users cannot expect a lower token price in the future. Therefore, we can solve an equilibrium with a positive token price in the next section.
+
+        The entrepreneur's value declines in the normalized token supply (a notion of "inflation" practitioners casually refer to).
+
+        The value function is always positive in Panel A, suggesting that the entrepreneur never abandons the platform.
+
+        Overall, our model reveals a rich set of trade-offs in the choice of token-financed investment.
+
+        The dynamics of token price are directly linked to that of productivity-normalized token supply
+
+        In stark contrast to the 200\% per annum volatility of productivity shock that we input, i.e., the fundamental volatility, $\sigma$tP is surprisingly small (below 0.15\% in Panel B of Fig. 3)
+
+        Panel C of Fig. 3 shows the expected token price change. When mt is low, the expectation is negative, re-flecting the likely token-supply increase due to token payout to the entrepreneur and increasing investment needs (Panel A of Fig. 2). As mt increases, the expected change in token price gradually increases and eventually becomes positive because, first, the investment needs decline, and second, the likelihood of token buyback increases.
+
+        Our model features mild volatility in the token price.
+
+        Therefore, in our model, the stability of token price relies on the dynamic payout and token buyback decisions of the entrepreneur. This mechanism differs significantly from the stablecoin designs proposed by practitioners.
+
+        A derivative of such design is to further tranche the claims on real resources, so tokens are the most senior tranche, which is less information-sensitive and thus has a stable secondary-market value. Li and Mayer (2020) provide a model on collateralized stablecoins.
+
+        Under this model the root of the underinvestment problem is the cost of external financing for token buyback
+
+        Interestingly, a weaker network effect induces the entrepreneur to be more aggressive in token issuance.
+
+        the conflict of interest between the entrepreneur and users and the resultant underinvestment problem depend on three ingredients: (1) the external financing cost, (2) user heterogeneity, and (3) the uncertainty in investment outcome. even though a weaker network effect reduces the average positive impact of investment on token price and the entrepreneur's payout (the mean effect), it also dampens the risk of investment, which is a key ingredient of the underinvestment problem.
+
+        The entrepreneur faces a time inconsistency problem that features prominently in studies on macroeconomics and corporate capital structure.
+
+        we study how commitment to predetermined token-supply rules adds value this provides insights on why tokens become a viable payment solution after the blockchain technology matures We show that the fundamental role of such commitment actually lies in the mitigation of underinvestment.
+
+        To sum up, commitment to predetermined investment rules adds value by addressing the token overhang problem, but it also forces the entrepreneur to control the token supply more actively via the remaining margins (i.e., payout and buyback), and to pay the financing cost more frequently. Overall, when the former force dominates, the entrepreneur obtains a higher value via commitment: A higher level of investment translates into a higher token price through users' expectations of faster productivity growth, and a higher token price in turn implies a more valuable token payout for the entrepreneur.
+
+        An alternative solution is to finance investment with fees collected from users. we do not address the question of optimal fee setting.
+
+        Introducing fees does not significantly affect the dynamics of the token price
+
+        Overall, fees increase the entrepreneur's value by both alleviating the under-investment problem and allowing the platform to reduce the impact of financing costs by postponing token buybacks.
+
+        Tokens facilitate user transactions and compensate distributed ledger-keepers, open-source developers, and crowd-funders for their contributions to platform development. The platform owners maximize their seigniorage by managing token supply, subject to the conditions that users optimally decide on token demand and rationally form expectations of token price dynamics.
+
+        A key mechanism is the wedge between insiders' (the platform owners') token valuation and that of outsiders (users). When the valuation wedge falls to zero, the platform owners optimally receives token dividends; when it rises to an endogenously determined threshold, the platform optimally burns tokens out of circulation to stabilize the token value. The wedge creates underinvestment in platform productivity under the financing cost of token buyback. By enabling commitment, blockchains enable rule-based token supply, thereby mitigating underinvestment by overcoming the platform owners' time inconsistency. Financing investment with fees charged on users reduces the investment inefficiency at the expense of user participation and token demand.
+    },
+}
 @article{rogoff22,
-  title        = {{Redeemable Platform Currencies}},
-  author       = {Rogoff, Kenneth and You, Yang},
-  year         = 2022,
-  month        = {05},
-  journal      = {The Review of Economic Studies},
-  volume       = 90,
-  number       = 2,
-  pages        = {975--1008},
-  doi          = {10.1093/restud/rdac028},
-  issn         = {0034-6527},
-  url          = {https://doi.org/10.1093/restud/rdac028},
-  abstract     = {Can massive online retailers such as Amazon and Alibaba issue digital tokens that potentially compete with bank debit accounts? There is a long history of trading stamps and loyalty points, but new technologies are poised to sharply raise the significance of redeemable assets as a store of value. Here, we develop a simple stylized model of redeemable tokens that can be used to study sales and pricing strategies for issuing tokens, including ICOs. Our central finding is that platforms can potentially earn higher revenues by making tokens non-tradable unless they can generate a sufficiently high outside-platform convenience yield.},
-  eprint       = {https://academic.oup.com/restud/article-pdf/90/2/975/49435191/rdac028.pdf},
-  annote       = {TBC.},
+    title        = {Redeemable Platform Currencies},
+    author       = {Rogoff, Kenneth and You, Yang},
+    year         = 2022,
+    month        = {05},
+    journal      = {The Review of Economic Studies},
+    volume       = 90,
+    number       = 2,
+    pages        = {975--1008},
+    doi          = {10.1093/restud/rdac028},
+    issn         = {0034-6527},
+    url          = {https://dx.doi.org/10.1093/restud/rdac028},
+    abstract     = {Can massive online retailers such as Amazon and Alibaba issue digital tokens that potentially compete with bank debit accounts? There is a long history of trading stamps and loyalty points, but new technologies are poised to sharply raise the significance of redeemable assets as a store of value. Here, we develop a simple stylized model of redeemable tokens that can be used to study sales and pricing strategies for issuing tokens, including ICOs. Our central finding is that platforms can potentially earn higher revenues by making tokens non-tradable unless they can generate a sufficiently high outside-platform convenience yield.},
+    annote       = {
+        \begin{quote} \textit{\dots our read of the centuries-old history of money is that the government may initially allow or even foster private innovation in transaction technology, but eventually the government regulates and appropriates.} \end{quote}
+
+        The authors consider a stylized partial equilibrium model of redeemable tokens to study design, features, sales and pricing strategies for issuing tokens in place of using fiat currency. Starting with simple strategies where all non-tradable and tradable tokens are sold for the same price, they move to more sophisticated issuance strategies where platforms use a price menu in their once and for all 'initial coin offering' (ICO) or through a combination of an ICO and ongoing 'seasoned coin offerings' (SCO).  The most general formulation is a separating equilibrium for price discrimination with consumer heterogeneity.
+
+        Their central observation is: platforms can generally earn higher revenues via non-tradable tokens, i.e. platforms ought to forgo creating a prototype currency unless the prototype currency is expected to create significant convenience yield from using the token outside the platform.  The gains from trade derive from the platform earning a higher rate of return on its outside investments than small retail consumers earn. Consumers' share of the gains from trade tends to be higher with traded tokens. Making tokens tradable constrains the ability of a platform to offer richer token price/quantity tradeoffs or memory features.
+
+        Motivated by the observation that different regulatory treatment merits consideration when new assets offer functionality not available via traditional assets, the paper presents a brief history of the evolution of four (4) different generations of redeemable platform assets: 1) Trading stamps (1930s-1980s), 2) customer loyalty programs (1980s-current), 3) platform cash/stored-value cards and 4) crypto-coins/tokens.  The model used here, most closely resembles platform cash/stored-value cards such as Amazon, Uber, Alibaba. Nonetheless, some insights are relevant to the newer $4^{th}$ generation of redeemable assets.
+
+        Consumer motivation arises, in general, because tokens offer a discount (which their model endogenizes), pays interest, provide a money-like convenience, or some combination of these. A critical issue is how a consumer values a credit that pays for her $M^{th}$ unit of platform good, depending on the exact timing of the consumer's needs for the platform good.
+
+        Platform motivation arises, in general, because tokens introduce low-interest consumers, reduce transactions costs, strengthening consumer loyalty, etc. In many cases non-tradable tokens can be sold at a higher price (for any given quantity) and yield higher profits to the platform. One reason, reminiscent of the Coase conjecture, is that tradability forces the platform to compete with future resale markets and limits the power to charge a high price upfront.
+
+        The paper also explores more sophisticated issuance strategies in which platforms use a price menu approach in their initial coin offering ("buy more and save more"). Here the platform can potentially exploit all the potential gains from inter-temporal trade, only if the token is non-tradable. For tradable tokens, a price menu adds nothing to the platform's options.
+
+        Simple model assumptions -the platform's customer base is given -outside banking options are given -One unit of the (perishable) platform commodity costs one dollar (there is no inflation in the fiat currency), and provides one unit of consumption -any given period $t$, the consumer demands one unit of the platform commodity with probability $p$, and zero units with probability $1-p$. All infinitely-lived consumers are identical with time discount factor $\beta$. -Consumers and the platform are risk-neutral (utility function is linear in the consumption of the platform commodity) -the convenience yield is zero in all transactions (no benefit to holding excess coins) -the consumer is not required to use the platform token and can always pay one dollar of fiat currency -Token issuance does not affect consumer demand for platform consumption (no network-effects) -the platform's rate of return exceeds that of platform users (net interest margin). This benefit is important if, as is assumed, digital tokens give retail platforms access to the same low interest-rate lenders that banks profit from. -the platform discounts the future at $\beta^\textasteriskcentered < \beta$, to capture that as a large platform, it has better outside investment opportunities than do small consumers (this inequality is the sole source of gains from inter-temporal trade to justify token issuance in the baseline model) -Zero cost of producing platform intermediation services or purchasing commodities to sell to consumers. -No platform failure or bankruptcy (otherwise a default premium is built into the token). -Relatedly, if the platform issues tokens, these are assumed senior to any other debt the platform may issue. -The platform can make credible commitments to its future token issuance policy and to redeemability. -The platform can issue a "currency" in the form of non-interest-bearing redeemable digital tokens, indexed to fiat currency, that can be converted to one unit of the platform commodity in any given period. Any token issued by the platform is effectively a "stable coin" whose platform-use value is fixed in terms of fiat money, and we assume no inflation. Whereas the platform guarantees (credibly commits) to the purchasing power of its tokens on its platform, it does not offer to redeem for face value in fiat currency -Platform tokens are tradable among consumers only if the platform allows it. This is more analogous to loyalty points or platform cash than to "stable coins", in that they have a fixed dollar value when redeemed on the platform, but cannot be redeemed directly for cash.
+
+        In this construction, several benefits of tradability are absent: 1) liquidity potentially allows the platform to pay a lower return due to a liquidity premium, 2) if agents are risk-averse in period utility, there would be further benefit to tradability, 3) tradable tokens cannot be used with other platforms or peer-to-peer transfer. Non-traded tokens provide the platform the ability to implement more sophisticated pricing strategies (for example a price menu approach), and to incorporate memory features. The paper does not consider gains from trade due to pseudonymity. Nor do the authors consider the scenario where platform currencies supplant government fiat money.
+
+        Points of further discussion are, consumer surplus, embedded memory, interest payments, the possibility of runs, proportional costs, a convenience yield and when the platform cannot make credible commitments. The discussion of embedded memory canvases history-dependent issuance as well as issuance based on current holdings (Markov issuance) and is reminiscent of Kocherlakota's(1998) "Money as memory".
+
+        Non-tradable ICO optimal issuance: assume platform sets the issuance quantity $M$, then the issue price is
+
+        \begin{equation} P_{I,N}=\left[\frac{\beta p}{1-\beta(1-p)}\right]^{M} \end{equation}
+
+        where $\beta$. Let $R_{I,N}$ be the total revenue from a non-tradable ICO,
+
+        \begin{equation} R_{I,N} = \underbrace{M P_{I,N}}_{Token~Issuance} + \underbrace{\left[\frac{\beta^{\textasteriskcentered}p}{1-\beta^{\textasteriskcentered}(1-p)}\right]^{M} \frac{\beta^{\textasteriskcentered}p}{1-\beta^{\textasteriskcentered}}}_{Fiat~Money}. \end{equation}
+
+        Then the two necessary and sufficient conditions to find the unique revenue-maximizing issuance quantity, $M$, are
+
+        \begin{equation} \left[\frac{\beta p}{1-\beta(1-p)}\right]^{M}\geq(M-1)\left(\left[\frac{\beta p}{1-\beta(1-p)}\right]^{M-1}-\left[\frac{\beta p}{1-\beta(1-p)}\right]^{M}\right)+\left[\frac{\beta^{\textasteriskcentered}p}{1-\beta^{\textasteriskcentered}(1-p)}\right]^{M} \end{equation}
+
+        and
+
+        \begin{equation} \left[\frac{\beta p}{1-\beta(1-p)}\right]^{M+1}<M\left(\left[\frac{\beta p}{1-\beta(1-p)}\right]^{M+1}-\left[\frac{\beta p}{1-\beta(1-p)}\right]^{M+1}\right)+\left[\frac{\beta^{\textasteriskcentered}p}{1-\beta^{\textasteriskcentered}(1-p)}\right]^{M+1} \end{equation}
+
+        Additional models considered are: 1) Tradable ICO, 2) Non-tradable ICO with price discrimination 3) Non-tradable ICO+SCO, 4) Tradable ICO+SCO, 5) Non-tradable ICO without price discrimination, 6) Tradable ICO with or without price discrimination, 6) Tradable/Non-tradable ICO+SCO without price discrimination
+
+        In general, there is a time-consistency problem for issuers and users, due to possible future issuance. Seasoned coin offerings (SCO) reflect the possibility that after the initial ICO, the platform commits to subsequently engaging in routine 'SCO' (seasoned coin offerings) sufficient to maintain a constant steady-state supply of tokens. In principle, there are three issuance strategies. (1) A no information policy, in which all consumers are offered the same price in every SCO regardless of their history in purchasing tokens and spending them. (2) A history-dependent policy where the platform can charge a price for SCO tokens that is a function of the consumer's entire history with the platform. (3) A Markov policy where issuance depends only on the consumer's current account information (holdings of tokens). Policies (2) and (3) are 'un-money like' but reflect the richer possibilities that digital currencies offer.  However, the "no information" policy is perhaps most likely to be regulatory-compliant and least likely to raise privacy concerns,
+
+        Understanding how the expectation of ongoing sales affects the price of the initial ICO is also relevant to understanding how lack of credibility might affect initial issuance and price. If SCOs are used to maintain a constant supply of tokens, then the maximum number of coins consumers will hold is one per person. This result is the same whether tokens are tradable or not, and in fact the tradable and non-tradable cases become equivalent.
+
+        The main results, on tradability versus non-tradability, and on how appetite for token holdings can be extremely sensitive to future issuance policy, appear to generalize to heterogeneous agents.
+
+        Finally, a platform chooses the pooling equilibrium if $\beta^{\textasteriskcentered} < \beta = 1$. Otherwise the platform chooses a separating equilibrium if the platform can gain sufficiently large profit from high-frequency consumers. The condition is:
+
+        \begin{equation} \frac{\left(\frac{\beta^{\textasteriskcentered}p_{H}}{1\!-\!\beta^{\textasteriskcentered}(1\!-\!p_{H})}\right){M}\ -\,\left(\frac{\beta^{\textasteriskcentered}p_{L}}{1\!-\!\beta^{\textasteriskcentered}(1\!-\!p_{L})}\right){M}} {\left(\frac{\beta p_{H}}{1-\beta(1\!-\!p_{H})}\right)M-\,\left(\frac{\beta p_{L}}{1\!-\!\beta(1\!-\!p_{L})}\right)M} < 2 \end{equation}
+
+        The optimal issuance policy $(M_L, M_H, P_L, P_H )$ can be solved as revenue maximization problem with incentive constraints and participation constraints.  The optimal token prices for frequent, $P_H$, and infrequent, $P_L$, consumers are
+
+        \begin{align} P_{H} \&= \frac{M_{L}P_{L}+\sum_{i=M_{L}+1}^{M_{H}}(\frac{\beta p_{H}}{1-\beta(1-p_{H})})^{i}}{M_{H}},\\ P_{L} \&= \frac{\sum_{i=1}^{M_{L}}(\frac{\beta p_{L}}{1-\beta(1-p_{L})})^{i}}{M_{L}} \end{align}
+
+        Appendix 2.4 details how to find the unique revenue-maximizing issuance quantities, $M_L$ and $M_H$.
+
+        The following Propositions are proved in the course of developing the models:
+
+        \begin{enumerate}
+
+        \item \textbf{Effective Discount Factor Dominance:} The effective discount factor is higher (closer to 1) for non-tradable ICO tokens than for tradable ICO tokens.
+
+        \item \textbf{Revenue Dominance:} The present value of future fiat revenue sales is higher when tokens are non-traded compared to traded.
+
+        \item \textbf{Token-in-advance Theorem:} In any equilibrium with a constant supply M of tokens, and with memoryless issuance strategy, M = 1 regardless of tradability.
+
+        \item \textbf{ICO versus ICO+SCO Dominance:} Under optimal issuance, the non-tradable ICO dominates ICO+SCO if $\beta^{\textasteriskcentered}$ is sufficiently low ($\beta^{\textasteriskcentered} \lim 0$). When the consumption probability p is low ($p \lim 0$) or $\beta^{\textasteriskcentered}$is high ($\beta^{\textasteriskcentered} \lim \beta$), an ICO+SCO dominates the non-tradable ICO.
+
+        \item \textbf{Heterogeneity of Non-tradable Tokens:} The token price with agent heterogeneity is lower than the token price with homogeneous consumers of the same average consumption probability, $\widetilde{P_{I,N}}<P_{I,N}$.
+
+        \item \textbf{Heterogeneity of Non-tradable Tokens:} When M = 1, the token price with heterogeneity is lower than the price with homogeneity, $\widetilde{P_{I,T}}<P_{I,T}$.
+
+        \item \textbf{Effective Discount Factor Dominance with Heterogeneity:} Under heterogeneity, the effective discount rate of non-tradable ICO tokens is still higher than that of tradable ICO tokens, $\beta^{\frac{1}{p}}\ <\ \exp{(\frac{2}{f(p_{L})+f(p_{H})})}$.
+
+        \item \textbf{ICO Price Dominance with Heterogeneity:} When M = 1, the token price with tradability is lower than the non-tradable token price under heterogeneity, $\widetilde{P_{I,T}}<\widetilde{P_{I,N}}$.
+
+        \item \textbf{ICO+SCO Revenue Dominance with Heterogeneity:} Heterogeneity reduces the discounted revenue of ICO+SCO issuance, $\widetilde{R_{S}}<R_{S}$.
+
+        \end{enumerate}
+    },
 }

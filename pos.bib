@@ -1,0 +1,206 @@
+@article{salah20,
+  title        = {Blockchain without Waste: Proof-of-Stake},
+  author       = {Saleh, Fahad},
+  year         = 2020,
+  month        = {07},
+  journal      = {The Review of Financial Studies},
+  volume       = 34,
+  number       = 3,
+  pages        = {1156--1190},
+  doi          = {10.1093/rfs/hhaa075},
+  issn         = {0893-9454},
+  url          = {https://dx.doi.org/10.1093/rfs/hhaa075},
+  abstract     = {Permissionless blockchains require a protocol to generate consensus. Many prominent permissionless blockchains employ Proof-of-Work (PoW) for that purpose, but PoW possesses significant shortcomings. Various alternatives have been proposed. This paper provides the first formal economic model of the most famous alternative, Proof-of-Stake (PoS), and establishes conditions under which PoS generates consensus. A sufficiently modest reward schedule not only implies the existence of an equilibrium in which consensus obtains as soon as possible but also precludes a persistent forking equilibrium. The latter result arises because PoS, unlike PoW, requires that validators are also stakeholders.},
+  annote       = {Outline: price model
+state variable
+assumed and derived characteristics
+model approach
+solution approach
+
+This paper studies
+consensus within the context of a particularly important class of blockchain
+known as a Proof-of-Stake (PoS) blockchain.
+
+The members of this network not only store but also update the ledger and are referred to as validators. The ledger's usefulness depends on validators agreeing on its contents: Consensus
+
+blockchain's potential to improve financial market efficiency hinges on
+the viability of permissionless (i.e., unrestricted) blockchains
+
+economic protocol (PoW)
+
+this paper
+theoretically studies PoS blockchains, blockchains that employ PoS as the
+economic protocol. PoS replaces PoW's competition by offering a randomly
+selected stakeholder the authority to update the blockchain. As such, PoS omits
+any incentive for validators to engage in a computational arms race.
+
+
+PoS, like PoW, offers a validator an explicit
+monetary reward, referred to as a block reward, to update the blockchain, but
+PoS, unlike PoW, does not require validators to incur an explicit monetary
+cost (such as that incurred from solving PoW's puzzle) to gain the authority
+to update the blockchain
+
+lack of an explicit cost
+coupled with the explicit benefit of the block reward implies that a validator
+will always update the ledger whenever given the opportunity even if the update
+necessarily perpetuates disagreement. This assertion is known as the Nothing-
+at-Stake problem, and it nullifies the viability of PoS if true because it implies
+that an initial disagreement persists indefinitely.
+
+
+first contribution is to establish that the Nothing-at-Stake
+problem is not valid in general.
+
+The Nothing-at-Stake
+problem implicitly makes a price-taking assumption so that a validator does
+not internalize the effect of her decisions on the value of the blockchain's
+native coin. This assumption is not appropriate for a validator in a PoS setting.
+If a validator appends to the blockchain in a way that perpetuates disagreement,
+then she imposes a cost on all stakeholders because her action undercuts the
+ability of users to exchange the native coin and thereby lowers its value. PoS
+grants authority to update the blockchain to only stakeholders; thus, within
+PoS, a validator imposes a cost on herself if she updates the blockchain in a
+manner that persists disagreement.
+
+provides conditions under which PoS generates consensus.
+
+Formally, I show that restricting access to update
+the blockchain to sufficiently large stakeholders induces an equilibrium that
+generates consensus expediently. This result arises because the cost of updating
+the blockchain in a manner that persists disagreement increases with a
+validator's stake. That cost increases in a validator's stake because, as previously
+referenced, persisting disagreement reduces coin value and stake references the
+number of coins that one holds. For a sufficiently large stakeholder, the cost of
+persisting disagreement outweighs the benefit from the block reward and thus
+a sufficiently high minimum stake requirement to update the ledger generates
+an equilibrium in which validators coordinate on generating consensus.
+
+Corollary 1, a zero block reward
+generates consensus without a restriction on the set of stakeholders that may
+update the blockchain. This result arises because the zero block reward removes
+the only potential gain from propagating disagreement.
+
+Thus, with nothing to gain
+from updating multiple branches (zero block reward) and a cost incurred from
+updating no branches, a zero block reward induces an equilibrium in which all
+stakeholders coordinate to update a single branch of the blockchain.
+
+Proposition 4, demonstrates that
+a sufficiently modest block reward schedule implies that disagreement resolves
+eventually with probability one within any equilibrium. This result arises
+because stakeholder incentives involve two components: initial coin holdings
+and block rewards. When the latter component, block rewards, is sufficientlyBlockchain without Waste: Proof-of-Stake
+1159
+Downloaded from https://academic.oup.com/rfs/article/34/3/1156/5868423 by guest on 26 February 2021
+small, then the former component, initial coin holdings, becomes the dominant
+incentive. Since disagreement undermines the blockchain's native coin value, a
+sufficiently modest block reward schedule drives each stakeholder to prioritize
+generating consensus regardless of the strategies of other stakeholders. In turn,
+this behavior generates consensus eventually in any equilibrium.
+
+The ability to generate consensus with low block rewards distinguishes
+PoS from PoW. The reason for this difference arises because PoS requires
+all validators to hold native coins. That requirement ensures that low block
+rewards shift validator incentives toward maximizing the value of native coins,
+which, in turn, encourages validators to seek consensus. Within PoW, validators
+need not hold any native coins so that reducing block rewards does not align
+incentives toward maximizing the value of native coins; rather, reducing block
+rewards undermines the incentive for validators to participate in the validation
+process at all.
+
+demonstrates benefits for PoS protocols imposing a validator
+minimum stake requirement and employing modest block reward schedules.
+
+A minimum stake requirement requires that the PoS protocol restrict access
+to update the ledger to sufficiently large stakeholders. A modest block reward
+schedule requires that block rewards offered to validators for updating the ledger
+be kept small. Both the discussed measures help generate consensus within a
+PoS protocol as demonstrated by Proposition 2, Corollary 1, and Proposition 4
+
+This paper differs from those works
+that rely on exogenous behavioral assumptions by employing the standard
+economic paradigm of implying agent behavior based on preferences, payoffs,
+and equilibrium analysis.
+
+this paper does not seek to match any single implementation. Rather, this paper studies a chain-based PoS protocol that captures the most economically
+relevant aspects of an arbitrary PoS protocol.
+
+The simplest implementation of PoS, known as the
+Follow-the-Satoshi (FTS) algorithm, involves each blockchain branch selecting
+uniformly and randomly from the universe of native coins.5 The owner of the
+selected coin receives the opportunity to append to the branch that selected
+her coin and simultaneously collect a block reward. This protocol succeeds
+in reducing energy expenditure to negligible levels, but in doing so, PoS
+faces an objection known as the Nothing-at-Stake problem
+
+The Nothing-at-Stake problem assumes an initial
+disagreement and argues that this disagreement will persist indefinitely for a
+PoS protocol.
+
+The argument also asserts that the player faces no cost
+from appending to the ledger, implicitly invoking a price-taking assumption.
+
+this argument asserts that appending a block is a weakly dominant strategy and since some player receives the opportunity to append to each
+branch during each time slot, the argument concludes that any existing branch
+will receive a new block in every time slot so that any initial fork will persist
+indefinitely.
+
+This paper highlights that the Nothing-at-Stake problem's price-taking
+assumption is not appropriate for the setting.
+
+equilibrium behavior under a PoS protocol is not as suggested by the Nothing-
+at-Stake problem, and this paper offers a set of conditions under which PoS
+generates consensus in the presence of an initial disagreement.
+
+the aforementioned requires a premise that the value of a blockchain's
+native coin depends on the ability to exchange the native coin
+
+some PoS implementations (e.g., Ethereum's Casper)
+combat the Nothing-at-Stake problem with explicit punishment schemes.
+but Brown-Cohen et al. (2019) establish that detection of the Noting-
+at-Stake problem requires making PoS vulnerable to the Double-Spending
+Attack.7 Consequently, developing a PoS incentive structure that overcomes
+the Nothing-at-Stake problem without explicit punishment is important
+
+this paper does precisely that by providing restrictions on PoS protocol design
+parameters that overcome the Nothing-at-Stake problem.
+
+model an extensive form game
+Two salient strategies: 
+- the Longest Chain Rule strategy: appending only to the longest branch whenever feasible with the longest chain being defined as branch 1 whenever both branches possess the same length
+- the Nothing-at-Stake strategy: appending a block whenever given the opportunity
+
+Proposition 2 establishes the existence of an equilibrium in which PoS obtains
+consensus. Proposition 4 provides conditions under which all equilibria achieve
+consensus eventually with probability one.
+
+Proposition 2, I demonstrate that this cost can be made sufficiently
+large to induce a symmetric equilibrium in which all players follow LCR.
+
+Proposition 2. Immediate Consensus
+R
+If $min \pi i \times S \geq \delta k (1 - \delta )$
+2 , then there exists an equilibrium in which each player
+follows the longest chain rule. In such an equilibrium, the fork resolves at
+$t = k$.
+
+Corollary 1. No Block Reward
+If $\all t \in N : R_t = 0$, then there exists an equilibrium in which each player follows
+the longest chain rule.
+
+A myopic player with no coins always
+appends to the blockchain when given the option if the block reward takes a
+strictly positive value.
+
+
+In this article, Saleh explores the concept of Proof-of-Stake (PoS) as an alternative consensus mechanism in blockchain technology. The author focuses on the environmental and economic implications of PoS, highlighting its potential to address the energy-intensive nature of traditional Proof-of-Work (PoW) systems.
+
+The article provides a comprehensive analysis of the theoretical foundations and practical applications of PoS. It examines the economic incentives and security considerations associated with PoS, comparing them to the traditional PoW mechanism. Saleh also discusses the implications of PoS for blockchain scalability, network security, and transaction finality.
+
+The research presented in this article offers insights into the potential benefits and challenges of adopting PoS as a consensus mechanism. Saleh's analysis contributes to the ongoing debate on the environmental impact of blockchain technology and the quest for more sustainable and efficient blockchain systems.
+
+The article is relevant for researchers, practitioners, and policymakers interested in understanding the potential of PoS in blockchain design and its implications for the financial industry. It provides a comprehensive overview of the economic and environmental aspects of PoS and offers valuable insights into the ongoing evolution of consensus mechanisms in blockchain technology.
+
+Overall, Saleh's article on "Blockchain without Waste: Proof-of-Stake" provides a thorough exploration of the PoS mechanism, its theoretical underpinnings, and its potential applications. It is a valuable resource for readers seeking to gain a deeper understanding of the economic and environmental dimensions of blockchain consensus protocols.},
+}

@@ -21,6 +21,8 @@
 \usepackage{blindtext}
 % Generally hyperref should be last
 \usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{amsmath}
 
 \hypersetup{
     colorlinks=true,
@@ -34,6 +36,8 @@
 \urlstyle{same}
 
 \AtBeginDocument{\renewcommand\refname{Annotated Bibliography}}
+
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
 
 \def \doturl{https://research.web3.foundation/en/latest/polkadot/overview/2-token-economics.html}
 \def \acaurl{https://github.com/AcalaNetwork/Acala-white-paper/}
@@ -61,14 +65,15 @@
 @article{burnie18,
   title        = {Developing a Cryptocurrency Assessment Framework: Function over Form},
   author       = {Burnie, Andrew and Burnie, James and Henderson, Andrew},
-  year         = 2018,
+  year         = {2018},
   month        = {July},
   journal      = {Ledger},
-  volume       = 3,
-  doi          = {https://doi.org/10.5195/ledger.2018.151},
-  url          = {https://ledgerjournal.org/ojs/ledger/article/view/121},
+  volume       = {3},
+  doi          = {10.5195/ledger.2018.151},
+  url          = {https://doi.org/10.5195/ledger.2018.151},
   abstract     = {The rise of cryptocurrency as a new sui generis asset class creates a need for a new classification scheme to cover the wide range of functionality for which tokens can be used. By differentiating tokens based on their functional attributes, cryptocurrency tokens can be categorised into crypto-transaction tokens (which act as a cash substitute); crypto-fuel tokens (which underpin generic blockchain applications); and crypto-voucher tokens (which can be exchanged for a predefined asset). This classification is applied to identify important issues when considering whether to participate in a cryptocurrency system, such as the impact of potential forks, token supply expectations and the level of dependence on a few operators (entity-dependence). For crypto-transaction tokens (and crypto-fuel tokens if used in a similar or overlapping role) it shows the importance of the token being seen as a “better” form of money. For crypto-fuel tokens, the popularity of blockchain applications and the utility of the crypto-fuel system in application development is vital. For crypto-voucher tokens, the value of the underlying asset, the token’s exchangeability for that asset and the importance of a digital representation should be considered by participants. The interplay between fundamentals and speculation as drivers of price is considered.}
 }
+
 @article{cochrane91,
 author = {Cochrane, John H.},
 title = {Production-Based Asset Pricing and the Link Between Stock Returns and Economic Fluctuations},
@@ -82,6 +87,7 @@ eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1540-6261.1991.tb037
 abstract = {This paper describes a production-based asset pricing model. It is analogous to the standard consumption-based model, but it uses producers and production functions in the place of consumers and utility functions. The model ties stock returns to investment returns (marginal rates of transformation) which are inferred from investment data via a production function. The production-based model is used to examine forecasts of stock returns by business-cycle related variables and the association of stock returns with subsequent economic activity.},
 year = {1991}
 }
+
 @book{duffie01,
   title={Dynamic Asset Pricing Theory: Third Edition},
   author={Duffie, D.},
@@ -104,7 +110,36 @@ year = {1991}
   doi          = {https://doi.org/10.1111/j.1471-1842.2009.00848.x},
   url          = {https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1471-1842.2009.00848.x},
   eprint       = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1471-1842.2009.00848.x},
-  abstract     = {Abstract Background and objectives:  The expansion of evidence-based practice across sectors has lead to an increasing variety of review types. However, the diversity of terminology used means that the full potential of these review types may be lost amongst a confusion of indistinct and misapplied terms. The objective of this study is to provide descriptive insight into the most common types of reviews, with illustrative examples from health and health information domains. Methods:  Following scoping searches, an examination was made of the vocabulary associated with the literature of review and synthesis (literary warrant). A simple analytical framework—Search, AppraisaL, Synthesis and Analysis (SALSA)—was used to examine the main review types. Results:  Fourteen review types and associated methodologies were analysed against the SALSA framework, illustrating the inputs and processes of each review type. A description of the key characteristics is given, together with perceived strengths and weaknesses. A limited number of review types are currently utilized within the health information domain. Conclusions:  Few review types possess prescribed and explicit methodologies and many fall short of being mutually exclusive. Notwithstanding such limitations, this typology provides a valuable reference point for those commissioning, conducting, supporting or interpreting reviews, both within health information and the wider health care domain.}
+  abstract     = {Abstract Background and objectives:  The expansion of evidence-based practice across sectors has lead to an increasing variety of review types. However, the diversity of terminology used means that the full potential of these review types may be lost amongst a confusion of indistinct and misapplied terms. The objective of this study is to provide descriptive insight into the most common types of reviews, with illustrative examples from health and health information domains. Methods: Following scoping searches, an examination was made of the vocabulary associated with the literature of review and synthesis (literary warrant). A simple analytical framework—Search, AppraisaL, Synthesis and Analysis (SALSA)—was used to examine the main review types. Results: Fourteen review types and associated methodologies were analysed against the SALSA framework, illustrating the inputs and processes of each review type. A description of the key characteristics is given, together with perceived strengths and weaknesses. A limited number of review types are currently utilized within the health information domain. Conclusions:  Few review types possess prescribed and explicit methodologies and many fall short of being mutually exclusive. Notwithstanding such limitations, this typology provides a valuable reference point for those commissioning, conducting, supporting or interpreting reviews, both within health information and the wider health care domain.}
+}
+
+@article{green84,
+ ISSN = {00129682, 14680262},
+ URL = {http://www.jstor.org/stable/1911462},
+ abstract = {Recent work in game theory has shown that, in principle, it may be possible for firms in an industry to form a self-policing cartel to maximize their joint profits. This paper examines the nature of cartel self-enforcement in the presence of demand uncertainty. A model of a noncooperatively supported cartel is presented, and the aspects of industry structure which would make such a cartel viable are discussed.},
+ author = {Edward J. Green and Robert H. Porter},
+ journal = {Econometrica},
+ number = {1},
+ pages = {87--100},
+ publisher = {[Wiley, Econometric Society]},
+ title = {Noncooperative Collusion under Imperfect Price Information},
+ urldate = {2023-05-04},
+ volume = {52},
+ year = {1984}
+}
+
+@article{hirshleifer71,
+ ISSN = {00028282},
+ URL = {http://www.jstor.org/stable/1811850},
+ author = {Jack Hirshleifer},
+ journal = {The American Economic Review},
+ number = {4},
+ pages = {561--574},
+ publisher = {American Economic Association},
+ title = {The Private and Social Value of Information and the Reward to Inventive Activity},
+ urldate = {2023-05-04},
+ volume = {61},
+ year = {1971}
 }
 
 @Article{lucas72,
@@ -132,9 +167,23 @@ year = {1991}
   abstract = {In order to explain fairly simply how expectations are formed, we advance the hypothesis that they are essentially the same as the predictions of the relevant economic theory. In particular, the hypothesis asserts that the economy generally does not waste information, and that expectations depend specifically on the structure of the entire system. Methods of analysis, which are appropriate under special conditions, are described in the context of an isolated market with a fixed production lag. The interpretative value of the hypothesis is illustrated by introducing commodity speculation into the system.}
 }
 
+@article{porter83,
+title = {Optimal cartel trigger price strategies},
+journal = {Journal of Economic Theory},
+volume = {29},
+number = {2},
+pages = {313-338},
+year = {1983},
+issn = {0022-0531},
+doi = {https://doi.org/10.1016/0022-0531(83)90050-9},
+url = {https://www.sciencedirect.com/science/article/pii/0022053183900509},
+author = {Robert H Porter},
+abstract = {A dynamical model of industry equilibrium is described in which a cartel deters deviations from collusive output levels by threatening to produce at Cournot quantities for a period of fixed duration whenever the market price falls below some trigger price. In this model firms can observe only their own production level and a common market price. The market demand curve is assumed to have a stochastic component, so that an unexpectedly low price may signal either deviations from collusive output levels or a demand shock.}
+}
+
 @Article{sargent71,
   author={Sargent, Thomas J},
-  title={{A Note on the 'Accelerationist' Controversy}},
+  title={A Note on the 'Accelerationist' Controversy},
   journal={Journal of Money, Credit and Banking},
   year=1971,
   volume={3},
@@ -162,7 +211,7 @@ year = {1991}
   abstract     = {This paper recollects meetings with Robert E. Lucas, Jr. over many years. It describes how, through personal interactions and studying his work, Lucas taught me to think about economics.}
 }
 @article{sargent15,
-  title        = {{Robert E. Lucas Jr.'s Collected Papers on Monetary Theory}},
+  title        = {Robert E. Lucas Jr.'s Collected Papers on Monetary Theory},
   author       = {Thomas J. Sargent},
   year         = 2015,
   month        = {March},
@@ -172,23 +221,22 @@ year = {1991}
   pages        = {43--64},
   doi          = {},
   url          = {https://ideas.repec.org/a/aea/jeclit/v53y2015i1p43-64.html},
-  keywords     = {},
-  abstract     = {This paper is a critical review of and a reader's guide to a collection of papers by Robert E. Lucas, Jr. about fruitful ways of using general equilibrium theories to understand measured economic aggregates. These beautifully written and wisely argued papers integrated macroeconomics, microeconomics, finance, and econometrics in ways that restructured big parts of macroeconomic research. ( JEL A31, E00, E13, E50)}
+  abstract     = {This paper is a critical review of and a reader's guide to a collection of papers by Robert E. Lucas, Jr. about fruitful ways of using general equilibrium theories to understand measured economic aggregates. These beautifully written and wisely argued papers integrated macroeconomics, microeconomics, finance, and econometrics in ways that restructured big parts of macroeconomic research.}
 }
 @article{tsafnat14,
   title        = {Systematic review automation technologies},
   author       = {Tsafnat, Guy and Glasziou, Paul and Choong, Miew Keen and Dunn, Adam and Galgani, Filippo and Coiera, Enrico},
-  year         = 2014,
+  year         = {2014},
   month        = {Jul},
   day          = {09},
   journal      = {Systematic Reviews},
-  volume       = 3,
-  number       = 1,
-  pages        = 74,
+  volume       = {3},
+  number       = {1},
+  pages        = {74},
   doi          = {10.1186/2046-4053-3-74},
   issn         = {2046-4053},
   url          = {https://doi.org/10.1186/2046-4053-3-74},
-  abstract     = {Systematic reviews, a cornerstone of evidence-based medicine, are not produced quickly enough to support clinical practice. The cost of production, availability of the requisite expertise and timeliness are often quoted as major contributors for the delay. This detailed survey of the state of the art of information systems designed to support or automate individual tasks in the systematic review, and in particular systematic reviews of randomized controlled clinical trials, reveals trends that see the convergence of several parallel research projects.}
+  abstract     = {Systematic reviews, a cornerstone of evidence-based medicine, are not produced quickly enough to support clinical practice. The cost of production, availability of the requisite expertise and timeliness are often quoted as major contributors for the delay. This detailed survey of the state of the art of information systems designed to support or automate individual tasks in the systematic review, and in particular systematic reviews of randomized controlled clinical trials, reveals trends that see the convergence of several parallel research projects.},
 }
 \end{filecontents}
 
@@ -204,46 +252,37 @@ year = {1991}
 % Economy Type: End
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{Substrate Token Economics:\\Annotated Bibliography Scoping Review\footnote{This work was supported by a research grant from the Web3 Foundation. The analysis and opinions expressed are the author's and do not reflect the opinions of the Web3 Foundation.}}
+\title{Token Economics Scoping Review:\\Annotated Bibliography\footnote{This work was supported by a grant from the Web3 Foundation. The analysis and opinions expressed are the author's and do not reflect the opinions of the Web3 Foundation.}}
 \author{Mark Van de Vyver, Ph.D.(Dist) (mark@taqtiqa.com)\\
 Begley Brothers Inc.\\
 }
 \maketitle
 \begin{abstract}
 \begin{quote}
-This project provides a annotated bibliography "Scoping Review" to highlight some tools and techniques relevant to the design of a token economy.
+This project highlights some tools and techniques relevant to the design of a token economy under a rational expectations hypethesis.  Six articles are reviewed, yielding designs for effervescent-coins, dampened-coins, breakable-coins and redeemable-coins. A review of Polkadot Parachain coin designs indicates there is considerable differences in the issues and risks addressed by theoretical token designs and those canvased in the designs as practiced in the Polkadot ecosystem.
 \end{quote}
 \end{abstract}
 
 \tableofcontents
 
 \section{Background}
-This project emerged from an effort to take a token-economy design and bootstrap some settings for a launch state. That is also the scope of the ideas and topics raised here - a bootstrapping exercise.  The context is a competitive equilibrium setting rather than any non-competitive Nash-only type of equilibrium.
-The definition of "Rational Expectations" is due to John Muth\autocite{muth61}:
+This project emerged from an effort to take a token-economy design and bootstrap some settings for a launch state. That is also the scope of the ideas and topics raised here - a bootstrapping exercise.  The context is a competitive rational expectations equilibrium setting rather than any non-competitive Nash-only type of equilibrium.
+The definition of "rational expectations" in economics is due to John Muth\autocite{muth61}:
+
 \begin{quote}
-In order to explain fairly simply how expectations are formed, we advance the hypothesis that they are essentially the same as the predictions of the relevant economic theory.
+    \textit{In order to explain fairly simply how expectations are formed, we advance the hypothesis that they are essentially the same as the predictions of the relevant economic theory.}
 \end{quote}
+
 Calculating a competitive equilibrium in these settings is generally done via fixed point theorems.  For examples: Robert Lucas\autocite{lucas72} defines a rational expectations equilibrium as a fixed point in a space of functions of Markov state vectors, while Thomas Sargent\autocite{sargent71} defines it as a fixed point in a space of stochastic processes. Since then, a multitude of introductory text book treatments have emerged. Darrell Duffie's text\autocite{duffie01} is considered a sound introduction, with an orientation exercise in Chapter 1 illustrating the use of a fixed point theorem to establish whether an equilibrium exists.
 
-\section{Token-Economy Taxonomy}
+\section{Token-Economy}
 
-This analysis of the Parachain tokenomics is limited to publicly available whitepapers or token-economy/tokenomics documentation. Initial proposal flow-chart/decision-tree development that will help developers place their token in the following contexts.
-Types under the following topics
+None of the reviewed Polkadot parachain token/coins were designed using an rational expectations framework (with the possible exception of the Equilibrium parachain, see Table \ref{table:ntet} ), and none derive an expression for even \textit{stylized} token price dynamics.
+Hence, it was not possible to identify, across multiple parachains, those elements of rational expectations modeling used in the design of parachain tokens. Consequently, in place of that summary a series of flow-charts/decision-trees is presented that may help developers identify the scope of their token design. 
 
-\begin{enumerate}
-    \item[] Model: structural vs reduced form
-    \item[] Economy: open vs ajar vs closed
-    \item[] Equilibrium: partial vs general
-    \item[] Sectors: public vs private, financial vs real and their interactions
-    \item[] Production: Cobb-Douglas vs constant elasticity of substitution
-    \item[] Monetary: Quantity Theory of Money vs Fiscal Theory of the Price Level etc.
-\end{enumerate}
-
-Other attributes/specifications of a native token economy that are generally absent are: Agent Utility, Market Rates (Riskless Rates + Risk Premia), Rate Curves (by maturity), Borrowing/Lending, Lender of Last Resort.
-
-The Equilibrium Parachain is a notable exception:
 \ctable[
-    caption = Native Token-Economy Types: Polkadot Ecosystem % title name of the table
+    caption = Native Token-Economy Types: Polkadot Ecosystem, % title name of the table
+    label = table:ntet
     ]{l l c c c c c c} % creating 8 columns
     {
         \tnote[a]{This economy is Open in terms of borrowing and lending tokens.}
@@ -262,15 +301,25 @@ The Equilibrium Parachain is a notable exception:
     \hline % inserts single-line
 }
 
+It should be borne in mind that what follows is solely the authors opinionated selections. The fact than some of these elements/characteristics then appeared in the articles selected for the annotated bibliography should not by regarded as evidence those elements/characteristics are necessary or optimal.  It is early days in the development of token designs and non-trivial technical developments tend to have long lead times.
+
+Issues that a token designer may wish to consider have been grouped under the following topics:
+
+\begin{enumerate}
+    \item[] Model: structural vs reduced form
+    \item[] Economy: open vs ajar vs closed
+    \item[] Equilibrium: partial vs general
+    \item[] Sectors: public vs private, financial vs real and their interactions
+    \item[] Production: Cobb-Douglas vs constant elasticity of substitution
+    \item[] Monetary: Quantity Theory of Money vs Fiscal Theory of the Price Level etc.
+\end{enumerate}
+
+Other attributes/specifications of a native token economy that are generally absent are: Agent Utility, Market Rates (Riskless Rates + Risk Premia), Rate Curves (by maturity), Borrowing/Lending, Lender of Last Resort.
+
 It is fair to say that most Parachain have not found it necessary to specify their token-economy by including or analyzing the effects of the above considerations. 
 It is difficult to sustain the argument that this has adversely affected the ability to raise capital. For those funded via Initial Coin Offerings, one can argue this access to capital absent even cursory evidence the 'economy' is sustainable, simply reflects the exploitative nature of ICOs. However, that argument is less plausible where capital has been raised more scrupulously (i.e. compliance with the minimal investor safeguards regulators require) and with more difficulty, from sophisticated Venture Capital funds.
 
-A plausible conjecture is that all participants regard any deterioration of their economy as improbable or:
-\begin{enumerate}
-    \item slow to emerge,
-    \item have self evident causes and
-    \item those causes will be reversible.
-\end{enumerate}
+A plausible conjecture is that all participants regard any deterioration of their economy as improbable or any deterioration well be slow to emerge, have self evident causes and those causes will be reversible.
 
 \subsection{Economy Type}
 A token-economy is open if it engages in unrestricted staking and rewarding with the native coins (NC) of other token-economies, and if it accepts the NC of other token-economies as medium of payment for its transaction fees. Otherwise the token-economy is ajar or closed.  Similar classification can be done using tokens in place of NC. Here staking refers to efforts to secure the blockchain.
@@ -547,7 +596,7 @@ A production function is a specification of how the quantity of output behaves a
 \end{center}
 
 \subsection{Monetary Type}
-Monetary Policy is one of the most fraught topics in macroeconomics. There is no consensus on an unconditionally optimal policy. Rather the designer of a token-economy will be left to chose from among the alternatives below.
+Monetary Policy is one of the most fraught topics in macroeconomics. There is no consensus on an unconditionally optimal policy. An important choice will be between adopting non-neutral or neutral monetary policies. While there is no consensus on the optimal choice, there are extensive literature on both. Generally the designer of a token-economy will be left to chose from among the alternatives below.
 \begin{table}[!ht]
 \caption{Monetary Policy Types} % title name of the table
 \centering % centering table
@@ -568,7 +617,8 @@ Collateral peg & Collateral spot price & Low inflation as measured by the collat
 
 \subsection{Native Token Functions}
 
-In light of the above the functional classification of 
+This analysis is limited to publicly available network whitepapers or token-economy/tokenomics documentation. None of the reviewed Polkadot parachain token/coins were designed using an rational expectations framework (with the possible exception of the Equilibrium parachain), and none derive an expression for their token price dynamics. Consequently, their token functions have been summarized using the framework put forward by Burnie, A., Burnie, J., and Henderson, A. (2018)\autocite{burnie18}.
+
 \begin{table}[!ht]
 \caption{Native Token Functions: Polkadot Ecosystem} % title name of the table
 \centering % centering table
@@ -606,9 +656,8 @@ Chain & Token & Fuel & Transaction & Voucher \\ [0.5ex]
 \end{tabular}
 \end{table}
 
-\section{Notation}
-
 % Annotated Bibliography
+\pagebreak
 \begin{refsection}[annotated_bibliography]
 \nocite{*}
 \printbibliography[heading=bibnumbered]
@@ -671,7 +720,8 @@ https://eresources.sl.nsw.gov.au/proquest-central-proquest
    - What can blockchain do and cannot do?
    - Understanding token-based ecosystems â€“ a taxonomy of blockchain-based business models of start-ups
  - selected: 
-
+  - Theories of Crowdfunding and Token Issues: A Review
+  
 https://eresources.sl.nsw.gov.au/academic-onefile-gale
 
 https://eresources.sl.nsw.gov.au/abiinform-proquest
@@ -681,17 +731,22 @@ https://eresources.sl.nsw.gov.au/abiinform-proquest
      - What can blockchain do and cannot do?
      - Internet of Things: Business Economics and Applications
      - The token's secret: the two-faced financial incentive of the token economy
+- selected: 
      - Cong, Lin William; Li, Ye; Wang, Neng. Token-based platform finance. Journal of Financial Economics ; 2021; 144 , pp. 972-91. [DOI: https://dx.doi.org/10.1016/j.jfineco.2021.10.002]
      - Cong, Lin William; Li, Ye; Wang, Neng. Tokenomics: Dynamic adoption and valuation. The Review of Financial Studies ; 2021; 34 , pp. 1105-55. [DOI: https://dx.doi.org/10.1093/rfs/hhaa089]
-     
-
+- From Citation:
+  - Xiong, Jinwu and Liu, Qing and Zhao, Lei, 2020. "A new method to verify Bitcoin bubbles: Based on the production cost," The North American Journal of Economics and Finance, Elsevier, vol. 51(C). 
+  - Blockchain without Waste: Proof-of-Stake, Saleh, 2021 – Review of Financial Studies
+  - Chapter 1: A Brief Introduction to Blockchain Economics
+  - Michael Sockin and Wei Xiong (2023), A Model of Cryptocurrencies, Management Science, forthcoming.
+  - Michael Sockin and Wei Xiong (2023), Decentralization Through Tokenization, Journal of Finance 78, 247–299.  
+  
 https://eresources.sl.nsw.gov.au/jstor-search-journals-primary-sources-and-books-jstor
  ("token economics" OR tokenomics) 
  - language: English
  - journals: Business, Economics, Finance
  - 16 results
    - screened: 2
-   - selected: 1, \cite{cong19}
    
 The annotated bibliography component of this project is closest to a "Scoping Review", see \footcite{grant09}
 

@@ -1,0 +1,151 @@
+In the following, $\frac{\beta p}{1-\beta(1-p)}$ is the effective discount rate when the platform aims to issue an extra token, $\frac{\beta^* }{1-\beta^*}p$ is the platform expected present value of sales. The first-best is that consumers transfer their entire willingness to pay to the platform in
+the first period. It is achievable by issuing a life-long membership which enables pay once and
+enjoy the free service for all time, $\frac{\beta}{1-\beta}p$ is this first-best expected present value of sales.  Hence, the present value of revenue after token issuance is bounded by $\left[{\frac{\beta^{*}}{1-\beta^{*}}}p,\,{\frac{\beta}{1-\beta}}p\right]$
+
+Non-tradable ICO optimal issuance: assume platform sets the issuance quantity $M$, then the issue price is
+
+\begin{equation}
+    P_{I,N}=\left[\frac{\beta p}{1-\beta(1-p)}\right]^{M}
+\end{equation}
+
+Let $R_{I,N}$ be the total revenue from a non-tradable ICO,
+
+\begin{equation}
+    R_{I,N} = \underbrace{M P_{I,N}}_{Token~Issuance}
+    +
+    \underbrace{\left[\frac{\beta^{*}p}{1-\beta^{*}(1-p)}\right]^{M}
+    \frac{\beta^{*}p}{1-\beta^{*}}}_{Fiat~Money}.
+\end{equation}
+
+Then the two necessary and sufficient conditions to find the unique revenue-maximizing issuance quantity, $M$, are
+
+\begin{equation}
+    \left[\frac{\beta p}{1-\beta(1-p)}\right]^{M}\geq(M-1)\left(\left[\frac{\beta p}{1-\beta(1-p)}\right]^{M-1}-\left[\frac{\beta p}{1-\beta(1-p)}\right]^{M}\right)+\left[\frac{\beta^{*}p}{1-\beta^{*}(1-p)}\right]^{M}
+\end{equation}
+
+and
+
+\begin{equation}
+    \left[\frac{\beta p}{1-\beta(1-p)}\right]^{M+1}<M\left(\left[\frac{\beta p}{1-\beta(1-p)}\right]^{M+1}-\left[\frac{\beta p}{1-\beta(1-p)}\right]^{M+1}\right)+\left[\frac{\beta^{*}p}{1-\beta^{*}(1-p)}\right]^{M+1}
+\end{equation}
+
+Tradable ICO: assume platform sets the issuance quantity M, then the issue price is
+
+\begin{equation}
+    P_{I,T}=\beta^{\frac{M-1}{p}}\left(\frac{\beta p}{1-\beta(1-p)}\right).
+\end{equation}
+
+Let $R_{I,T}$ be the total revenue from a tradable ICO,
+
+\begin{equation}
+    R_{I,T} = \underbrace{M P_{I,T}}_{Token~Issuance}
+    +
+    \underbrace{\beta^{*\frac{M-1}{p}}\frac{\beta^{*}p}{1-\beta^{*}(1-p)}\left(\frac{\beta^{*}p}{1-\beta^{*}}\right)}_{Fiat~Money}.
+\end{equation}
+
+Non-tradable ICO with Price Menu (PM): When consumers are able to get a lower average price, the more tokens they buy,
+
+\begin{equation}
+    P_{I,PM} = \frac{\beta p}{1-\beta}[1-\left(\frac{\beta p}{1-\beta(1-p)}\right)^{M}]\frac{1}{M},
+\end{equation}
+
+where $P_{I,PM} > P_{I,N}$.
+
+There is a time-consistency problem for issuers and users, due to expectations of future issuance affecting the shadow price at which the implicit value of tokens will rise. 
+
+Seasoned coin offerings (SCO) Consider the possibility that
+after the initial ICO, the platform commits to subsequently engaging in routine memoryless 'SCO' (seasoned coin offerings) sufficient to maintain a constant steady-state supply of tokens. understanding how the expectation of ongoing sales affects the price of the initial ICO is also relevant to understanding how lack of credibility might affect initial issuance and price.  
+
+if SCOs are used to maintain a constant supply of tokens, then the maximum number of coins consumers will hold is one per person. This result is the same whether tokens are tradable or not, and in fact the tradable and non-tradable cases become equivalent.
+
+In principle, there are three issuance strategies. (1) A no information policy, in which all consumers are offered the same price in every SCO regardless of their history in purchasing tokens and spending them. (2) A history-dependent policy where the platform can charge a price for SCO tokens that is a function of the consumer's entire history with the platform. (3) A Markov policy where issuance depends only on the consumer's current account information (holdings of tokens)
+
+Policies (2) and (3) may seem very 'un-money like' but actually incorporate the richer possibilities that digital currencies offer,
+
+Initially, focus on the "no information" policy that is perhaps most likely to
+be regulatory-compliant and least likely to run afoul of privacy concerns. Recall we are assuming there is no benefit to holding excess coins, i.e. the convenience yield is zero.
+
+Non-tradable ICO+SCO: At the end of each period, the platform will offer $p$ tokens per person at price
+
+\begin{equation}
+    P_{S,N}=\frac{\beta p}{1-\beta(1-p)}
+\end{equation}
+
+might be more viable in an environment where consumers face liquidity constraints
+Let $R_{S,N}$ be the total revenue from a non-tradable SCO,
+
+\begin{equation}
+    R_{S,N} = \underbrace{P_{S,N}}_{Token~Issuance}
+    +
+    \underbrace{\left[\frac{\beta^{*}p}{1-\beta^{*}(1-p)}\right]
+    \frac{\beta^{*}p}{1-\beta^{*}}}_{Fiat~Money}.
+\end{equation}
+
+Tradable ICO+SCO: At the end of each period, the platform will offer $p$ tokens per person at price
+
+\begin{equation}
+    P_{S,T}=\frac{\beta p}{1-\beta(1-p)}
+\end{equation}
+
+Let $R_{S,T}$ be the total revenue from a tradable ICO,
+
+\begin{equation}
+    R_{S,T} = \underbrace{P_{S,T}}_{Token~Issuance}
+    +
+    \underbrace{\left[\frac{\beta^{*}p}{1-\beta^{*}(1-p)}\right]
+    \frac{\beta^{*}p}{1-\beta^{*}}}_{Fiat~Money}.
+\end{equation}
+
+The main results, on tradability versus non-tradability, and on how appetite for token holdings can be extremely sensitive to future issuance policy, appear to generalize to heterogeneous agents.
+Specifically, assume a market of half frequent buyers $p_H$ and half infrequent
+buyers $p_L$. A platform aims to issue $M$ tokens in total, $M_L$ per infrequent
+consumer at price $P_L$, and $M_H$ per frequent consumer at $P_H$ respectively.
+Define a pooling equilibrium  as the case where $P_H = P_L$. Here both types of buyers purchase a positive number of tokens at the same price.  Define a separating equilibrium (or price discrimination equilibrium) as the case where two types of consumers buy tokens at different prices (or one type of consumers stay out the
+token market entirely). The issuance quantity is $M=\frac{M_{L}+M_{H}}{2}$, and consumption frequency is $p=\frac{p_{L}+p_{H}}{2}$.
+
+Non-tradable ICO without price discrimination: To issue $M$ tokens, the corresponding price is:
+
+\begin{equation}
+    \widetilde{P_{I,N}}=\exp{\left(\frac{2}{f(p_{L})+f(p_{H})} M\right)}
+\end{equation}
+
+where $f(p)\ =\ \frac{1}{\log\left(\frac{\beta p}{1-\beta(1-p)}\right)}$.
+
+Tradable ICO with or without price discrimination: With tradability, all consumers pay the same ICO price,
+
+\begin{equation}
+    \widetilde{P_{I,T}}=\beta^{\frac{M-1}{p}}\left[(1-\beta^{\gamma}(1-P_{L})^{\gamma})\frac{\beta p_{L}}{1-\beta(1-p_{L})}+\beta^{\gamma}(1-P_{L})^{\gamma}\frac{\beta p_{H}}{1-\beta(1-p_{H})}\right]
+\end{equation}
+
+where
+
+\begin{equation}
+    \gamma=-\floor{\frac{\log(1+\frac{p_{L}}{2p_{H}})}{\log(1-\frac{1}{2}p_{L})}}.
+\end{equation}
+
+Tradable/Non-tradable ICO+SCO without price discrimination: Given heterogeneous consumers, if the platform wants everyone to buy its tokens (low prices, broad consumer base), the ICO and SCO price is 
+
+\begin{equation}
+    \frac{\beta p_{L}}{1-\beta(1-p_{L})}
+\end{equation}
+
+Given heterogeneous consumers, if the platform wants only frequent consumers (high prices, narrow consumer base) to buy its tokens, the ICO and SCO price is 
+
+\begin{equation}
+    \frac{\beta p_{L}}{1-\beta(1-p_{L})}
+\end{equation}
+
+Finally, a platform chooses the pooling equilibrium if $\beta^{*} < \beta = 1$. Otherwise the platform chooses a separating equilibrium if the platform can gain sufficiently large profit from high-frequency consumers. The condition is:
+
+\begin{equation}
+    \frac{\left(\frac{\beta^{*}p_{H}}{1\!-\!\beta^{*}(1\!-\!p_{H})}\right){M}\ -\,\left(\frac{\beta^{*}p_{L}}{1\!-\!\beta^{*}(1\!-\!p_{L})}\right){M}}
+    {\left(\frac{\beta p_{H}}{1-\beta(1\!-\!p_{H})}\right)M-\,\left(\frac{\beta p_{L}}{1\!-\!\beta(1\!-\!p_{L})}\right)M}
+    < 2
+\end{equation}
+
+The optimal issuance policy $(M_L, M_H, P_L, P_H )$ can be solved as revenue maximization problem with incentive constraints and participation constraints.  The optimal token prices for frequent, $P_H$, and infrequent, $P_L$, consumers are
+
+\begin{align}
+    P_{H} &= \frac{M_{L}P_{L}+\sum_{i=M_{L}+1}^{M_{H}}(\frac{\beta p_{H}}{1-\beta(1-p_{H})})^{i}}{M_{H}},\\
+    P_{L} &= \frac{\sum_{i=1}^{M_{L}}(\frac{\beta p_{L}}{1-\beta(1-p_{L})})^{i}}{M_{L}}
+\end{align}
