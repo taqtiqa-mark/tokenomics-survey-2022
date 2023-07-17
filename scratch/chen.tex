@@ -1,0 +1,43 @@
+    comment      = {Vitalik was among the first to put forth the scalability trilemma that is widely recognized among practitioners: it is difficult to achieve decentralization, security, and scalability at the same time Brewer (2000) conjectured even earlier in a talk that it is impossible for a distributed data system to simultaneously provide consistency, availability, and partition tolerance. This was proven later by Gilbert and Lynch (2002).  Abadi and Brunnermeier (2018) gave an insightful and more comprehensive discussion of a similar trilemma from an economic perspective. When a blockchain is decentralized and correct, the lack of dynamic rent by various recordkeepers necessarily implies that the system is costly; when the system is decentralized and maintained at low cost, record\-keepers may misreport; when the consensus is correct and maintenance of the system is cheap, the outcome is incompatible with free entry and information portability (compared with traditional reputation-based system) conditions.},
+
+Section 2
+    
+        blockchain is a distributed system that stores time-ordered data in a continuously growing list of blocks. Each block contains information on transactions and business activities, and the entire network uses a consensus algorithm to reach an agreement on which block will be attached to the current recognized chain of blocks
+
+        In our opinion, the core functionality of the technology lies in the provision of decentralized consensus....decentralization is a matter of degree
+
+        blockchains aim to provide a trusted system or environment for economic agents to interact..."Trusted" in computer science means carrying out transactions in a faulttolerant way
+
+        overemphasizing transparency or anonymity provides a misleading or incomplete picture of the benefits of decentralization. We attempt to give a definitive answer highlighting three core benefits of decentralization, each is a question of degree. 
+
+        A skeptical view is that excitement about blockchain is merely excitement about a database upgrade. However, even permissioned and private blockchains represent important innovations rather than mere database upgrades for the following reasons: the consensus generation process, though not fully decentralized, is often more decentralized than traditional systems; more importantly, the immutability of blockchain records coupled with proper encryption algorithms can enable proprietary databases (permissioned nodes or private blockchains) to interact to produce useful information aggregation, verification, and exchanges, all without sacrificing data pri-vacy
+
+        zero-knowledge-proof (ZKP) on top of blockchains enable multi-party computations (MPCs) applications, such as allow auditing firms to preserve proprietary information by exchange encrypted information when auditing transactions.
+
+Section 3
+
+        Games under consensus protocols: What economics brings to the table for consensus protocols are the concepts of equilibrium (and potential multiplicity), incentive compatibility (Bitcoin's mining protocol is an instance of incentive compatible protocol), and mechanism design (feasibility).
+
+        Proof-of-work protocol, selfish and stubborn miners ".... equilibria under PoW are far from being well understood." Exceptional price volatility arises because PoW implements a passive monetary policy that fails to modulate cryptocurrency demand shocks, see Saleh(2019), \textit{Volatility and Welfare in a Crypto Economy}, for this point theoretically formalized.
+
+        Alternative protocols: Proof-of-work, Byzantine fault tolerance (BFT), and variants offer good performance for small numbers of replicas. Proof-of-stake (PoS) creator of the next block is chosen via various combinations of random selection and wealth-size or wealth-age. Saleh (2019a), annotated here, provides the first formal economic model of PoS and establishes conditions under which PoS generates consensus, precluding a persistent forking equilibrium. proof-of-burn (PoB), to record new blocks, one has to "burn" tokens. PoB implements an active albeit ad hoc monetary policy that modulates cryptocurrency demand shocks
+
+        Blockchain impossibility triangle. we argue that almost all tradeoffs can be interpreted as manifestations of the tension among decen-tralization, scalability, and consensus (formation). we also mention how practitioners are still actively working on layer 1 protocol innovations and layer 2 business model innovations to resolve the seeming impossibility triangle.  consensus is hard to achieve. In fact, Fischer et al. (1982) show that there is no guarantee that an asynchronous network can agree on a single outcome. We believe that sacrificing some decentrali-zation is a promising direction and enterprise blockchains are going to be the major trend for blockchain applications. Trust combined with effi-ciency can disrupt existing business models and relationships Besides exploring solutions to the challenge of the impossibility triangle, another fruitful path could be to clearly identify the need in particular applications and design the protocols and business models correspondingly
+        
+Section 4
+
+        Network security: Once we fix the consensus protocol, there could be a number of strategies that attackers/malicious nodes in the network could deploy
+
+        Overconcentration: the incentives for consensus generation seem to lead to an industrial organization with a perceived tendency for concentration. risk sharing constitutes a natural force against decentralization and gives rise to mining pools
+
+        energy consumption: empirical evidence that cryptomining crowds out other economic activities and may result in net welfare loss, Logically, Bitcoin price cannot be the long-term and only driver for the high energy consumption.
+
+        Adoption: limited adoption prob-lem arises endogenously in PoW blockchains. Increased transaction demand increases the fees, which induce recordkeepers to enter the net-work (for permissionless blockchains). The increased network size then protracts the consensus process and delays transaction confirmation. Users adopt only if they possess extreme insensitivity to delays, limiting a PoW payments blockchains widespread adoption
+
+        Multi-party computation and permissioned blockchains: Permissioned blockchains are widely used as a distributed database system that could enable MPC. Auditors could greatly improve audit-ing efficiency if the auditors automate information verification of clients' transaction with minimum sharing of their clients' information with other auditors, thanks to zero-knowledge protocols that preserve data privacy and integrity. This collaboration among auditors does not require a third party to monitor or intermediate
+
+        smart contracts: smart contracts can be robust to renegotiation, effects of price commitments via smart contracts on firm competition and value. SC limitations: 1) it cannot enforce the transfer of ownership of offline assets, 2) it has been combined with IoTs and oracles to acquire information off-chain; 3) it is not a panacea for incomplete contracting: contingencies traditional contracts cannot specify are also hard to program into smart contracts
+
+        Information aggregation and distribution: broader informational implica-tion of blockchains. for a decen-tralized consensus system to be robust to single points of failure, there has to be some degree of information distribution, even encrypted. greater information in the public domain would lead to market participants to tacitly collude more, hurting consumer welfare. Blockchains and smart contracts expand the set of possible dynamic equilibria leading to social welfare and consumer surplus that could be higher or lower than in a traditional world. token weighting generally discourages truthful voting and erodes the platform's informa-tion aggregation for prediction
+
+Section 5

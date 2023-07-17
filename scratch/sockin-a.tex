@@ -1,0 +1,105 @@
+        For a utility token with validators/miners, a strategic attack succeeds with a known probability, which the authors provide an expression for.
+
+        \begin{equation} 
+        
+        p_{s}=\frac{3}{4}\frac{\delta_{T S}U\left(\hat{A}_{T C S}(\delta_{T S})\right)}{\gamma\,\Phi\Bigl(\sqrt{\tau_{\epsilon}}\Bigl(A-\hat{A}_{T C S}(\delta_{T S})\Bigr)\Bigr)}. 
+        
+        \end{equation}
+
+        where the transaction fee, $\delta_{T S}$ is
+
+        \begin{equation} 
+        
+        \delta_{T S}=-\frac{M-1}{\frac{\partial}{\partial\delta_{T S}}\log U\left(\hat{A}_{T C S}(\delta_{T S})\right)} 
+        
+        \end{equation}
+
+        After each round of transaction, user $i$ has a Cobb-Douglas utility function over consumption of his own good and the good of user $j$ according to
+
+        \begin{equation} 
+        
+        U_{i}(C_{i},C_{j})=\left(\frac{C_{i}}{1-\eta_{c}}\right)^{1-\eta_{c}}\left(\frac{C_{j}}{\eta_{c}}\right)^{\eta_{c}}, 
+        
+        \end{equation}
+
+        where $\eta_{c} \in (0, 1)$ represents the weight in the Cobb-Douglas utility function on his consumption of his trading partner's good $C_j$, and $1 -\eta_{c}$ is the weight on the consumption of his own good $C_i$. A higher $\eta_{c}$ means a stronger complementarity between the consumption of the two goods.
+
+        User $i$ has a goods endowment of $eAi$, which is equally divided across $t = 1$ and $t = 2$. User $i$'s fundamental, $Ai $, comprises a component $A$ common to all users and an idiosyncratic component,
+
+        \begin{equation} 
+        
+        A_{i}=A+\tau_{\varepsilon}^{-1/2}\varepsilon_{i}, 
+        
+        \end{equation}
+
+        where $\varepsilon_{i} \sim{} N(0, 1)$ is normally distributed and independent across users and from $A$.
+
+
+        model a user's transaction need by his endowment in a consumption good and his preference of consuming his own good together with the goods of other users. As a result of this preference, users need to trade goods with each other, which can occur only on the platform. Consequently, there is a key network effect--each user's desire to join the platform grows with the number of other users on the platform and the size of their goods endowments.
+
+        If the developer issues equity, this leads to a group of equity holders that is represented by an owner who receives ownership and control of the platform. The owner chooses to provide a subsidy at the time $1$ to attract the marginal user, whose own transaction need is relatively low and who is otherwise not incentivized to participate on the platform.
+
+        The owner can profit from charging transaction fees that increase with the transaction surplus on the platform, it internalizes the participation cost of the marginal user by providing a subsidy to all users. However, control of the platform allows the owner to exploit users at time $2$ after the platform collects extensive data about them at time $1$.
+
+        It is impossible to commit under the equity-based scheme, as the owner can always choose to reverse any previous commitment at time $2$. This demand for commitment motivates tokenization.
+
+        Alternatively, the developer may adopt a token-based scheme. We focus on utility tokens because they represent the canonical form of tokens that entitle holders to services but not the cash flows of the platform.
+
+        assume that the platform adopts a frictionless consensus protocol that confers voting rights to token holders; later, in the paper, we examine the additional issues raised by protocols that require outside validators.
+
+        By issuing tokens to users who join the platform at time $1$, the developer transfers control of the platform at times $1$ and $2$ to users through pre-coded algorithms, which can serve as a commitment not to exploit users by requiring their consent.
+
+        Outline: a model approach
+
+        Our model features a rational expectations cutoff equilibrium Note that the expectation of the user's utility flow is with respect to the uncertainty associated with matching a transaction partner. By adopting a Cobb-Douglas utility function with quasi-linearity in wealth, users are risk-neutral with respect to this uncertainty.
+
+        the user's expected utility is monotonically increasing with his own endowment, regardless of other users' strategies, it is optimal for each user to use a cutoff strategy.  This leads, in turn, to a cutoff equilibrium, in which only users with endowments above a critical level, $\hat{A}^{E}$, participate in the platform. This cutoff is eventually solved as a fixed point in the equilibrium to equate the fixed participation cost to the expected transaction utility of the marginal user from joining the platform. Outline: state variable
+
+        Outline: solution approach
+
+               ===============================
+        Outline: model context
+
+        develop a model to examine tokenization as a mechanism to mitigate the tension between platforms and their users (similar to owner-manager agency conflicts in corporate finance).
+
+        commitment problem investors choose the subversive action of selling user data when transaction fees fall below the gain from selling user data, and there is no credible
+
+        We regard canonical tokens issued by a digital platform as an asset that conveys a right to the services of the platform and possible participation in its governance, but not necessarily cash flow rights -obtain a convenience yield from participating on the platform - including "payment" and "consumer" ("utility") tokens in the taxonomy of Global Digital Finance (GDF).
+
+        conflicts between online platforms and their users represent a unique challenge to the platform's design and raise questions about whether they could be disintermediated to protect consumers
+
+        two extensions of our model to illustrate the difficulty in overcoming the trade-off underlying decentralization when non-users also participate on the platform
+               
+               1) "equity tokens.", we examine a hybrid scheme that allows the platform to collect transaction fees from users and pay out the fees to token holders as dividends. giving token holders not only the right to make transactions but also the right to receive cash flows from the platform. equity token-based scheme is able to achieve the first-best outcome if the platform issues tokens only to users. However, investors may even take a majority stake to seize control of the platform, which, as we show, occurs when the platform fundamental is sufficiently weak -reintroducing the initial commitment problem. 
+               
+               2) we introduce a frictional consensus protocol on the platform by assuming that a group of decentralized validators compete for the right to record transactions on the blockchain in exchange for transaction fees. transaction fees are used as incentives to motivate the efforts of validators to maintain the security of the blockchain. When the platform's fundamentals are strong and the transaction fees to validators are sufficiently lucrative, validators have strong incentives to compete for the transaction fees, making the blockchain robust to any outside attack. In contrast, when the fundamentals are weak and transaction fees fall below a threshold, the reduced incentives of the validators to compete make the blockchain vulnerable to a "51\% attack" by a rogue validator, leading to an outcome similar to the subversive action explored earlier. This result re-veals that reliance on validators to maintain the security of the blockchain in tokenization may reintroduce the commitment problem because validators' interests differ from those of users.
+
+        A utility token conveys control rights to holders. However, unlike equity, a utility token does not bestow cash flow rights to the platform's profits. Because the token holders would never agree to take the subversive action against them-selves, this token-based scheme allows the platform to commit to not taking the subversive action. This utility token-based scheme captures the notion of decentralization, which underlies many decentralized crypto-based platforms, such as Filecoin, Tezos, and Decred. The simplicity of the utility token-based scheme makes it particularly appealing for highlighting the aforementioned trade-off introduced by decen-tralization
+
+        there is no incentive to hoard utility tokens because they only provide transaction benefits and only one token is needed to participate on the platform
+
+        Outline: model insights
+
+        Our key insight is that there is a cost-benefit trade-off induced by decentralization. Benefit (safeguarding users): Tokenization  protect users by shifting ownership and control of the platform to them from initial equity holders. Cost (unsubsidized participation): Removing any owner who would subsidize user participation to maximize the platform's network effect.
+
+        Comparing utility tokens to equity leads to a sharp implication: utility tokens are more appealing for digital platforms with relatively weak demand fundamentals (i.e. aggregate transaction needs by users).
+
+        Allowing tokens to pay cash flows therefore leads to the converse of the key trade-off that we highlight--it helps cross-subsidize user participation but at the expense of reintroducing the commitment problem
+
+        in the absence of commitment, as concern about the platform's exploitation of users grows, user participation, owner profit, and social surplus are all lower, and break-down is more likely to occur.
+
+        The lack of entry subsidy implies that the token-based scheme cannot accomplish the full user participation required by the first-best equilibrium. Instead, the token-based scheme serves as a compromise for platforms to precommit to not exploit users.
+
+        In settings with a hybrid equity-utility token or miners/validators, cash flow rights may lead token investors and validators, to take control of the platform, reintroducing the commitment problem.
+
+        First, utility token issuance is a less effective funding channel than equity issuance. Second, utility token prices have different determinants than equity prices and are particularly volatile because of the network effect of the platform. For utility token platforms, Because there is no owner, such platforms often resort to seignorage to provide subsidies. Seignorage acts as a transfer from existing token holders through token inflation. Such subsidization schemes are imperfect com-pared to the free or discounted services offered by centralized platforms such as Amazon and Google
+
+        the utility token-based scheme is more likely to be adopted by platforms with relatively weak fundamentals.
+
+        We note that there are two subtle issues with our analysis. 1) the commitment problem motivates the developer to retain zero stake after the ICO 2) more nuanced is the use of staged or tiered token sales to subsidize user participation.
+
+        the utility token-based scheme gives control of the platform to its users, it does not collect any transaction fees that could be used to cross-subsidize the participation of marginal users with the fees collected from heavy users. the lack of retention by devel-opers represents a commitment device rather than a signal of moral hazard or of the project's quality.
+
+        A hybrid scheme, allows the platform to collect transaction fees from users and pay out the fees to token holders as dividends Taken together, although allowing hybrid tokens to collect transaction fees helps to resolve the lack of subsidy of user participation, it reintroduces the commitment problem by attracting token investors to take control of the plat-form in some states of the world. The key shortcoming of hybrid tokens is that the platform's developer and precoded governance algorithms cannot distinguish between which token holders are users and which are investors
+
+        For utility tokens with validators, across two derived equilibria, a rogue validator has an incentive to attack the blockchain when the platform fundamental, $A$, is relatively low. analysis consequently reveals that giving control and cash flow rights to validators, as part of the tokenization scheme to decentralize the plat-form, can reintroduce the commitment problem because the interests of validators, such as miners and stakers, are not aligned with those of users.

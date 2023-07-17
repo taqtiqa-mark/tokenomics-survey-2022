@@ -1,3 +1,7 @@
+Simple model assumptions -the platform's customer base is given -outside banking options are given -One unit of the (perishable) platform commodity costs one dollar (there is no inflation in the fiat currency), and provides one unit of consumption -any given period $t$, the consumer demands one unit of the platform commodity with probability $p$, and zero units with probability $1-p$. All infinitely-lived consumers are identical with time discount factor $\beta$. -Consumers and the platform are risk-neutral (utility function is linear in the consumption of the platform commodity) -the convenience yield is zero in all transactions (no benefit to holding excess coins) -the consumer is not required to use the platform token and can always pay one dollar of fiat currency -Token issuance does not affect consumer demand for platform consumption (no network-effects) -the platform's rate of return exceeds that of platform users (net interest margin). This benefit is important if, as is assumed, digital tokens give retail platforms access to the same low interest-rate lenders that banks profit from. -the platform discounts the future at $\beta^\textasteriskcentered < \beta$, to capture that as a large platform, it has better outside investment opportunities than do small consumers (this inequality is the sole source of gains from inter-temporal trade to justify token issuance in the baseline model) -Zero cost of producing platform intermediation services or purchasing commodities to sell to consumers. -No platform failure or bankruptcy (otherwise a default premium is built into the token). -Relatedly, if the platform issues tokens, these are assumed senior to any other debt the platform may issue. -The platform can make credible commitments to its future token issuance policy and to redeemability. -The platform can issue a "currency" in the form of non-interest-bearing redeemable digital tokens, indexed to fiat currency, that can be converted to one unit of the platform commodity in any given period. Any token issued by the platform is effectively a "stable coin" whose platform-use value is fixed in terms of fiat money, and we assume no inflation. Whereas the platform guarantees (credibly commits) to the purchasing power of its tokens on its platform, it does not offer to redeem for face value in fiat currency -Platform tokens are tradable among consumers only if the platform allows it. This is more analogous to loyalty points or platform cash than to "stable coins", in that they have a fixed dollar value when redeemed on the platform, but cannot be redeemed directly for cash.
+
+In this construction, several benefits of tradability are absent: 1) liquidity potentially allows the platform to pay a lower return due to a liquidity premium, 2) if agents are risk-averse in period utility, there would be further benefit to tradability, 3) tradable tokens cannot be used with other platforms or peer-to-peer transfer. Non-traded tokens provide the platform the ability to implement more sophisticated pricing strategies (for example a price menu approach), and to incorporate memory features. The paper does not consider gains from trade due to pseudonymity. Nor do the authors consider the scenario where platform currencies supplant government fiat money.
+
 In the following, $\frac{\beta p}{1-\beta(1-p)}$ is the effective discount rate when the platform aims to issue an extra token, $\frac{\beta^* }{1-\beta^*}p$ is the platform expected present value of sales. The first-best is that consumers transfer their entire willingness to pay to the platform in
 the first period. It is achievable by issuing a life-long membership which enables pay once and
 enjoy the free service for all time, $\frac{\beta}{1-\beta}p$ is this first-best expected present value of sales.  Hence, the present value of revenue after token issuance is bounded by $\left[{\frac{\beta^{*}}{1-\beta^{*}}}p,\,{\frac{\beta}{1-\beta}}p\right]$
@@ -149,3 +153,27 @@ The optimal issuance policy $(M_L, M_H, P_L, P_H )$ can be solved as revenue max
     P_{H} &= \frac{M_{L}P_{L}+\sum_{i=M_{L}+1}^{M_{H}}(\frac{\beta p_{H}}{1-\beta(1-p_{H})})^{i}}{M_{H}},\\
     P_{L} &= \frac{\sum_{i=1}^{M_{L}}(\frac{\beta p_{L}}{1-\beta(1-p_{L})})^{i}}{M_{L}}
 \end{align}
+
+The following Propositions are proved in the course of developing the models:
+
+        \begin{enumerate}
+
+        \item \textbf{Effective Discount Factor Dominance:} The effective discount factor is higher (closer to 1) for non-tradable ICO tokens than for tradable ICO tokens.
+
+        \item \textbf{Revenue Dominance:} The present value of future fiat revenue sales is higher when tokens are non-traded compared to traded.
+
+        \item \textbf{Token-in-advance Theorem:} In any equilibrium with a constant supply M of tokens, and with memoryless issuance strategy, M = 1 regardless of tradability.
+
+        \item \textbf{ICO versus ICO+SCO Dominance:} Under optimal issuance, the non-tradable ICO dominates ICO+SCO if $\beta^{\textasteriskcentered}$ is sufficiently low ($\beta^{\textasteriskcentered} \lim 0$). When the consumption probability p is low ($p \lim 0$) or $\beta^{\textasteriskcentered}$is high ($\beta^{\textasteriskcentered} \lim \beta$), an ICO+SCO dominates the non-tradable ICO.
+
+        \item \textbf{Heterogeneity of Non-tradable Tokens:} The token price with agent heterogeneity is lower than the token price with homogeneous consumers of the same average consumption probability, $\widetilde{P_{I,N}}<P_{I,N}$.
+
+        \item \textbf{Heterogeneity of Non-tradable Tokens:} When M = 1, the token price with heterogeneity is lower than the price with homogeneity, $\widetilde{P_{I,T}}<P_{I,T}$.
+
+        \item \textbf{Effective Discount Factor Dominance with Heterogeneity:} Under heterogeneity, the effective discount rate of non-tradable ICO tokens is still higher than that of tradable ICO tokens, $\beta^{\frac{1}{p}}\ <\ \exp{(\frac{2}{f(p_{L})+f(p_{H})})}$.
+
+        \item \textbf{ICO Price Dominance with Heterogeneity:} When M = 1, the token price with tradability is lower than the non-tradable token price under heterogeneity, $\widetilde{P_{I,T}}<\widetilde{P_{I,N}}$.
+
+        \item \textbf{ICO+SCO Revenue Dominance with Heterogeneity:} Heterogeneity reduces the discounted revenue of ICO+SCO issuance, $\widetilde{R_{S}}<R_{S}$.
+
+        \end{enumerate}
