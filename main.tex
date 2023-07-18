@@ -593,11 +593,11 @@ A production function is a specification of how the quantity of output behaves a
 \end{center}
 
 \subsection{Monetary Type}
-Monetary Policy is one of the most fraught topics in macroeconomics. There is no consensus on an unconditionally optimal policy. An important choice will be between adopting non-neutral or neutral monetary policies. While there is no consensus on the optimal choice, there are extensive literature on both. The monetary policy related lectures for The Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel\autocite{nobel}, provide a useful review of the background, progress and contorversies. Generally the designer of a token-economy will be left to chose from among the alternatives below.
+Monetary Policy is one of the most fraught topics in macroeconomics. There is no consensus on an unconditionally optimal policy. An important choice will be between adopting non-neutral or neutral monetary policies. While there is no consensus on the optimal choice, there are extensive literature on both. The monetary policy related lectures for The Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel\autocite{nobel}, provide a useful review of the background, progress and contorversies. Generally the designer of a token-economy will be left to chose from among the alternatives shown in Table~\ref{tbl:mpt}.
 
 \subsection{Native Token Functions}
 
-This analysis is limited to publicly available network whitepapers or token-economy/tokenomics documentation. None of the reviewed Polkadot parachain tokens/coins were designed using a rational expectations framework (with the possible exception of the Equilibrium parachain), and none derive an expression for their token price dynamics. Consequently, the range of functionality for which tokens can be used have been summarized using the classification scheme put forward by Burnie, Burnie, and Henderson(2018)\autocite{burnie18}.  In their scheme, differentiating tokens based on functional attributes, tokens are categorised into crypto-transaction tokens (cash substitutes); crypto-fuel tokens (generic blockchain applications); and crypto-voucher tokens (exchangeable for a cosumption good). This classification helps identify issues to consider when participating in a cryptocurrency system.  For crypto-transaction and crypto-fuel tokens is the token a better form of money? For crypto-fuel tokens, the application user base and the utility of the token system are more important. For crypto-voucher tokens, the value of the numeraire good and the token’s exchangeability are important considerations.
+This analysis is limited to publicly available network whitepapers or token-economy/tokenomics documentation. None of the reviewed Polkadot parachain tokens/coins were designed using a rational expectations framework (with the possible exception of the Equilibrium parachain), and none derive an expression for their token price dynamics. Consequently, the range of functionality for which tokens can be used have been summarized using the classification scheme put forward by Burnie, Burnie, and Henderson(2018)\autocite{burnie18}.  In their scheme, differentiating tokens based on functional attributes, tokens are categorised into crypto-transaction tokens (cash substitutes); crypto-fuel tokens (generic blockchain applications); and crypto-voucher tokens (exchangeable for a cosumption good). This classification helps identify issues to consider when participating in a cryptocurrency system.  For crypto-transaction and crypto-fuel tokens is the token a better form of money? For crypto-fuel tokens, the application user base and the utility of the token system are more important. For crypto-voucher tokens, the value of the numeraire good and the token’s exchangeability are important considerations.  The results are summarized in Table~\ref{tbl:ntf}.
 
 \section{Token Price Models}
 
@@ -616,9 +616,61 @@ The annotated articles can be viewed two ways. The first is as a description of 
 
 It is true that neither Polkadot nor the parallel-chains currently on Polkadot have been designed nor conceived, using a rational expectations hypothesis.  That does not mean it is not possible to do so.  However, it is important to bear in mind that the models surveyed here are first generation models. Consequently, it is very likely that a blockchain that strives to implement one of the models described here will require substantial revisions as well as fine tuning.
 
+% Annotated Bibliography
+\clearpage
+\begin{refsection}[annotated_bibliography]
+\nocite{long20,cong21,cong22,sockin23a,sockin23b,rogoff22}
+\printbibliography[heading=bibnumbered]
+\end{refsection}
+
+\appendix
+% \chapter*{Appendices}% If \appendix doesn't insert a \chapter
+% \addcontentsline{toc}{chapter}{Appendices}% Print Appendix in ToC
+% \setcounter{section}{0}% Reset numbering for sections
+% \renewcommand{\thesection}{\Alph{section}}% Adjust section printing (from here onward)
+
+\section{Methodology}
+The published research annotated are the top-6 articles selected from the commercial research databases available from the State Library of New South Wales. The worklow and article counts are shown in Figure~\ref{fig:flowchart}.  This selection was arrived at in the following stages:
+\begin{enumerate}
+    \item Preparation:
+    by operationalizing the inquiry \textit{"Refereed articles on block-chain token-economics using rational expectations equilibrium (a.k.a. no-arbitrage) arguments/analysis, ranked by journal impact factors"};
+    \item Retrieval:
+    eliminating duplicates;
+    \item Screening:
+    removing false positives;
+    ranking by journal impact factor;
+    \item Selection:
+    selecting the top-6; and
+    \item Write-up:
+    reviewing remaining article abstracts and substituting where judged appropriate.
+\end{enumerate}
+
+
+The annotated bibliography component of this project is closest to a "Scoping Review"\autocite{grant09}, and Table~\ref{tbl:sr}.
+
+Each section of the report/working paper was developed using some subset of the following iterative process\autocite{tsafnat14}:
+\begin{enumerate}
+    \item Review reporting guidelines, best practice handbooks, and training modules [preparation stage]
+    \item Formulate question and decide on review type [preparation stage]
+    \item Search for previous published literature [preparation stage]
+    \item Develop and test search strategies [preparation stage]
+    \item Review search strategies [preparation stage]
+    \item Execute search [retrieval stage]
+    \item De-duplicate data/information [retrieval stage]
+    \item Screen title and abstracts [screening stage]
+    \item Retrieve full-text articles [retrieval stage]
+    \item Screen articles in full-text [screening stage]
+    \item Search for grey literature (preprints, working papers) [retrieval stage]
+    \item Quality assessment and data/information extraction [synthesis stage]
+    \item Citation chasing [retrieval stage]
+    \item Update database searches [retrieval stage]
+    \item Synthesize data/information [synthesis stage]
+    \item Manuscript development [write-up stage]
+\end{enumerate}
+
 \newpage\clearpage
 
-\section{Tables}
+\section{Figures and Tables}
 
 \ctable[
     caption = Native Token-Economy Types: Polkadot Ecosystem, % title name of the table
@@ -658,6 +710,7 @@ Collateral peg & Collateral spot price & Low inflation as measured by the collat
 \hline % inserts single-line
 
 \end{tabular}
+\label{tbl:mpt}
 \end{table}
 
 \begin{table}
@@ -695,59 +748,9 @@ Chain & Token & Fuel & Transaction & Voucher \\ [0.5ex]
 \hline % inserts single-line
 
 \end{tabular}
+\label{tbl:ntf}
 \end{table}
 
-% Annotated Bibliography
-\clearpage
-\begin{refsection}[annotated_bibliography]
-\nocite{long20,cong21,cong22,sockin23a,sockin23b,rogoff22}
-\printbibliography[heading=bibnumbered]
-\end{refsection}
-
-\appendix
-% \chapter*{Appendices}% If \appendix doesn't insert a \chapter
-% \addcontentsline{toc}{chapter}{Appendices}% Print Appendix in ToC
-% \setcounter{section}{0}% Reset numbering for sections
-% \renewcommand{\thesection}{\Alph{section}}% Adjust section printing (from here onward)
-
-\section{Methodology}
-The published research annotated are the top-6 articles selected from the commercial research databases available from the State Library of New South Wales. This list was arrived at in the following stages:
-\begin{enumerate}
-    \item Preparation:
-    by operationalizing the inquiry \textit{"Refereed articles on block-chain token-economics using rational expectations equilibrium (a.k.a. no-arbitrage) arguments/analysis, ranked by journal impact factors"};
-    \item Retrieval:
-    eliminating duplicates;
-    \item Screening:
-    removing false positives;
-    ranking by journal impact factor;
-    \item Selection:
-    selecting the top-6; and
-    \item Write-up:
-    reviewing remaining article abstracts and substituting where judged appropriate.
-\end{enumerate}
-
-
-The annotated bibliography component of this project is closest to a "Scoping Review"\autocite{grant09}, and Table~\ref{tbl:flowchart}.
-
-Each section of the report/working paper was developed using some subset of the following iterative process\autocite{tsafnat14}:
-\begin{enumerate}
-    \item Review reporting guidelines, best practice handbooks, and training modules [preparation stage]
-    \item Formulate question and decide on review type [preparation stage]
-    \item Search for previous published literature [preparation stage]
-    \item Develop and test search strategies [preparation stage]
-    \item Review search strategies [preparation stage]
-    \item Execute search [retrieval stage]
-    \item De-duplicate data/information [retrieval stage]
-    \item Screen title and abstracts [screening stage]
-    \item Retrieve full-text articles [retrieval stage]
-    \item Screen articles in full-text [screening stage]
-    \item Search for grey literature (preprints, working papers) [retrieval stage]
-    \item Quality assessment and data/information extraction [synthesis stage]
-    \item Citation chasing [retrieval stage]
-    \item Update database searches [retrieval stage]
-    \item Synthesize data/information [synthesis stage]
-    \item Manuscript development [write-up stage]
-\end{enumerate}
 
 \begin{table}[!ht]
 \caption{Scoping Review: Extract from Table 1 of Grant, M.J. and Booth, A. (2009)} % title name of the table
@@ -767,7 +770,7 @@ Preliminary assessment of potential size and scope of available research literat
 \hline % inserts single-line
 
 \end{tabular}
-\label{tbl:flowchart}
+\label{tbl:sr}
 \end{table}
 
 \begin{figure}[!ht]
@@ -780,3 +783,4 @@ Preliminary assessment of potential size and scope of available research literat
 \end{figure}
 
 \end{document}
+
