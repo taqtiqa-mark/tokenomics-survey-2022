@@ -122,7 +122,15 @@
 
         Compared to the authors' other work, annotated herein, in this paper, both $A_t$ and the token supply $M_t$ are endogenous. In fact, stabilized token prices result from the dynamic, optimal payout and buyback decisions of the platform owners.  To illustrate the size of this effect, a 200\% per annum volatility of productivity yields token price volatility below 0.15\% per annum.
                
-        A platform is a currency area (economy) where a unique set of economic activities take place.  Its tokens derive value by facilitating associated transactions. Stylized features of the economy are as follows. 1) Tokens are monetary assets. 2) Current platform productivity and normalized token supply are the key state variables. 3) Platform transactions are in native tokens. The marginal value of extra platform productivity is positive.  The marginal value of the extra token supply is negative. 
+        A platform is a currency area (economy) where a unique set of economic activities take place.  Its tokens derive value by facilitating associated transactions. Stylized features of the economy are: 
+               
+        \begin{enumerate}
+            \item Tokens are monetary assets.
+            \item Current platform productivity and normalized token supply are the key state variables.
+            \item Platform transactions are in native tokens. 
+            \item The marginal value of extra platform productivity is positive.
+            \item The marginal value of the extra token supply is negative.
+        \end{enumerate}
                
         The authors analyze the optimal token supply. Explore the dynamics of platform investment and financing. And the conflict of interest between the entrepreneur and users. They show a blockchain can allow a commitment not to expropriate value through excessive seignorage.
                
@@ -198,11 +206,11 @@
 
         \end{equation}
                
-        where ${\hat{A}_I}^{ET}$ is the cutoff endowment of the marginal investor, $p_I^{ET}$ is a price discount/premium for the marginal user, $\delta_{T}$ is the developer profit maximizing transaction fee, $U$ is a Cobb-Douglas utility function where users are risk-neutral with respect to the uncertainty of their wealth, $N$ is number of tokens in the developer's retention policy.
+        where ${\hat{A}_I}^{ET}$ is the cutoff endowment of the marginal investor, $p_I^{ET}$ is a price discount/premium for the marginal user, $\delta_{T}$ is the developer profit maximizing transaction fee, $U$ is a Cobb-Douglas utility function where users are risk-neutral with respect to the uncertainty of their wealth, $N$ is number of tokens in the developer's retention policy, $\gamma$ is harm to users from the owners subverting actions, and $s_I \in {0, 1}$ is the subverting action at $t = 2$. For example, investors modify the platform and sell user data to third parties, $s_I = 1$. The investor decision to subvert the platform is expressed via an inequality relation, which the authors derive.
                
         The aggregate endowment $A$ is a key characteristic of the platform. A well designed platform attracts users with strong needs to transact with each other. That is, users need to trade goods with each other, which can occur only on the platform. Together, these produce a network effect. 
                
-        In this telling, there are three dates. At time $0$, the platform developer funds the platform. Based on a prior belief about the platform's fundamentals, they issue traditional equity or tokens. The choice of funding scheme also determines the control and ownership of the platform in the later periods. At a time of $t = 1$, potential users choose whether to join the platform, subject to a cost. Each Platform user can match with another user to make beneficial transactions at $t = 1$ and $t = 2$. These times are the short run, $t=1$, and the long run, $t=2$. Those who do not join at time $0$ cannot take part in either round of trading.
+        In this telling, there are three dates. At time $0$, the platform developer funds the platform. Based on a prior belief about the platform's fundamentals, they issue traditional equity or tokens. The choice of funding scheme also determines the control and ownership of the platform in the later periods. At a time of $t = 1$, potential users choose whether to join the platform, subject to a cost. Each Platform user can match with another user to make beneficial transactions at $t = 1$ and $t = 2$. These times are the short run, $t=1$, and the long run, $t=2$. Those who do not join at time $0$ cannot take part in either round of trading. 
 
         Issuing equity leads to an owner who can profit by charging transaction fees. The owner can commit to not exploiting users at time $0$, and they choose to provide a subsidy at time $1$ to attract the marginal user. Control of the platform allows the owner to exploit users at time $2$ after the platform collects extensive data about them at time $1$. Under the equity scheme, the owner can always choose, at times $2$, to reverse any prior commitment. This owner-user tension is like owner-manager agency conflicts in corporate finance. Naturally, users want to find a way to bind the owner to their prior commitments. This demand for commitment motivates tokenization.
 

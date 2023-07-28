@@ -271,6 +271,35 @@ abstract = {A dynamical model of industry equilibrium is described in which a ca
   url          = {https://doi.org/10.1186/2046-4053-3-74},
   abstract     = {Systematic reviews, a cornerstone of evidence-based medicine, are not produced quickly enough to support clinical practice. The cost of production, availability of the requisite expertise and timeliness are often quoted as major contributors for the delay. This detailed survey of the state of the art of information systems designed to support or automate individual tasks in the systematic review, and in particular systematic reviews of randomized controlled clinical trials, reveals trends that see the convergence of several parallel research projects.},
 }
+@online{gbbc19a,
+title            = {GBBC Digital Finance Code of Conduct Taxonomy for Cryptographic Assets: From the Perspective of General Global Regulatory Standards}, 
+url              = {https://web.archive.org/web/20230728010242*/https://www.gdf.io/wp-content/uploads/2019/08/0010_GDF_Taxonomy-for-Cryptographic-Assets_Proof-V2-260719-1.pdf}, 
+journal          = {GDF taxonomy for cryptographic assets}, 
+publisher        = {GBBC Digital Finance LTD}, 
+author           = {GBBC Digital Finance LTD}, 
+year             = {2022}, 
+month            = {Oct},
+urldate          = {28.07.2023},
+originalyear     = {26.07.2019},
+} 
+@online{gbbc19b,
+title            = {Stablecoin Taxonomy and Key Considerations}, 
+url              = {https://web.archive.org/web/20230118151314/https://www.gdf.io/wp-content/uploads/2019/08/0010_GDF_Stablecoin-Taxonomy-and-Key-Considerations.pdf}, 
+journal          = {GDF taxonomy for cryptographic assets}, 
+publisher        = {GBBC Digital Finance LTD}, 
+author           = {GBBC Digital Finance LTD}, 
+year             = {2022}, 
+month            = {Oct},
+urldate          = {28.07.2023},
+originalyear     = {26.08.2019},
+}
+@inreference{ced23stylized,
+  title     = {stylized, adj.},
+  booktitle = {Cambridge Academic Content Dictionary},
+  publisher = {Cambridge University Press},
+  eprint       = {https://dictionary.cambridge.org/dictionary/english/stylized},
+  date   = {2023-07-28},
+}
 \end{filecontents}
 
 % File is created and written to disk by the above package
@@ -293,25 +322,46 @@ abstract = {A dynamical model of industry equilibrium is described in which a ca
 \maketitle
 \begin{abstract}
 \begin{quote}
-This project highlights some tools and techniques relevant to the design of a token economy under a rational expectations hypothesis.  Six articles are reviewed, these enumerate the conditions for equilibrium pricing of effervescent-coins, dampened-coins, breakable-coins and redeemable-coins. A review of Polkadot parallel-chain coin designs indicate there are differences in the issues and risks addressed by token equilibrium pricing models and those addressed by the designs practiced in the Polkadot ecosystem.
+This project highlights some tools and techniques relevant to the design of a token economy under a rational expectations hypothesis.  Six articles are reviewed, these enumerate the conditions for equilibrium pricing of effervescent-coins, dampened-coins, breakable-coins and redeemable-coins. A review of Polkadot parachain coin designs indicate there are differences in the issues and risks addressed by token equilibrium pricing models and those addressed by the designs practiced in the Polkadot ecosystem.
 \end{quote}
 \end{abstract}
 
 \tableofcontents
 
 \section{Background}
+
+As a scoping review the premise behind this work, is that the interested reader will refer to the published articles and cited references for additional details.  The aim of this scoping review is to point to ideas and references that help intiate further investigation.
+
 This project emerged from an effort to take a token-economy design and bootstrap some settings for a launch state. That is also the scope of the ideas and topics raised here.  The context is a competitive rational expectations equilibrium setting.  The definition of "rational expectations" in economics is due to John Muth\autocite{muth61}:
 
 \begin{quote}
     \textit{In order to explain fairly simply how expectations are formed, we advance the hypothesis that they are essentially the same as the predictions of the relevant economic theory.}
 \end{quote}
 
-Calculating a equilibrium in these settings is generally done via fixed point theorems.  For examples: Robert Lucas\autocite{lucas72} defines a rational expectations equilibrium as a fixed point in a space of functions of Markov state vectors, while Thomas Sargent\autocite{sargent71} defines it as a fixed point in a space of stochastic processes. Since then, a multitude of introductory text book treatments have emerged. Darrell Duffie's text\autocite{duffie01} is considered a sound introduction, with an orientation exercise in Chapter 1 illustrating the use of a fixed point theorem to establish whether an equilibrium exists. Similarly, the text\autocite{ljungqvist18} by Ljungqvist and Sargent provides a sound background.
+Calculating an equilibrium in these settings is generally done via fixed-point theorems.  For example, Robert Lucas\autocite{lucas72} defines a rational expectations equilibrium as a fixed point in a space of functions of Markov state vectors, while Thomas Sargent\autocite{sargent71} defines it as a fixed point in a space of stochastic processes. Since then, a multitude of introductory textbook treatments have emerged. Darrell Duffie's text\autocite{duffie01} is considered a sound introduction, with an orientation exercise in Chapter 1 illustrating the use of a fixed point theorem to establish whether an equilibrium exists. Similarly, the text\autocite{ljungqvist18} by Ljungqvist and Sargent provides a sound background.
+
+\subsection{Jargon}
+
+The terms "token" and "coin" are not clearly defined or consistently used in the industry. Most obviously, we frequently observe this when the term 'tokenomics' refers to both tokens and coins and contains no economics. In the literature surveyed here, there is an effort to bring some degree of economic analysis to bear on the problem of token/coin valuation. Nonetheless, sometimes the terms "token" and "coin" are used interchangeably, while in other papers they could represent different concepts.  
+The reader will have to continue to bear this frustration until the industry, and analysis of the industry, settle on precise definitions and consistently adopt them. 
+
+While the GDF Taxonomy for Cryptographic Assets\autocite{gbbc19a} is a useful starting point. Their observation is:
+
+\begin{quote}
+    \textit{Clearly defining what constitutes a token can be a surprisingly daunting task.}
+\end{quote}
+
+Naturally, if the definition of what constitutes a token is fraught, the definition of a "Token Economy" should be doubly so. That is the case. And you will find that each of the papers referenced here analyzes token/coin economies that are subtly different.
 
 \section{Token-Economy}
 
-None of the reviewed Polkadot parachain token/coins were designed with an explicit equilibrium objective, nor using an rational expectations framework (with the possible exception of the Equilibrium parachain, see Table \ref{table:ntet} ). No Polkadot parachain identifies an expression for \textit{stylized} token price dynamics.
-Hence, it was not possible to identify, across multiple parachains, those elements of rational expectations modeling used in the design of Polkadot parachain tokens. Consequently, in place of such a summary, a series of flow-charts/decision-trees is presented that may help developers identify the scope of their token design. 
+The Polkadot parachain token/coins reviewed are listed in Table \ref{tbl:ntf}.  None of the reviewed Polkadot parachain tokens/coins were designed with an explicit equilibrium objective, nor using a rational expectations framework (with the possible exception of the Equilibrium parachain, see Table \ref{table:ntet} ). No Polkadot parachain identifies an expression for even \textit{stylized} token price dynamics.  Here, and in the articles annotated, the term \textit{stylized} is used in the ordinary sense: \textit{represented in a way that simplifies details rather than trying to show naturalness or reality}\autocite{ced23stylized}.
+
+Hence, it was not possible to identify, across multiple Polkadot parachains, those elements of rational expectations modeling used in the design of Polkadot parachain tokens. 
+
+Reviewing implemented token designs is, by definition, an exercise limited to a specific blockchain.  However, an overview of the token design elements/issues a developer might consider is not so limited. In place of the Polkadot-centric "summary of implementations", a series of flow charts/decision trees is presented that may help any blockchain developer identify the scope of their token design. There is nothing in these choices that is limited to the Substrate or Polkadot ecosystems.  Rather, the purpose of these illustrations is to point out: the ideas on most topics are developed to a point that there are choices available. Consequently, the figures don't contain information about the subject beyond providing terms the interested reader might search for in the course of further research into a topic.
+
+It is natural to wonder what is the scope of a token economy. I leave that to the developer (team) to define. For example, which blockchain is covered by the "payment of transaction fees"? Is it the main relay chain of said token economy, such as in the Substrate ecosystem? Or does the developer refer to a single chain?  A close reading of the articles annotated here, and any that follow, should leave a developer with an opinion on which bears the closest resemblance to what they have in mind. But only the developer (team) knows what they have in mind.
 
 It is important to remember that what follows represents the author's subjective choices of elements or characteristics to model. The subsequent appearance of some of those same elements or characteristics in the articles selected for the annotated bibliography should not be interpreted as evidence that those elements or characteristics are indispensable or ideal. It is worth noting that the development of token designs is still in its early stages, and significant technical advancements often require substantial time.
 
@@ -323,13 +373,13 @@ Choices/tradeoffs that a token designer may wish to consider have been grouped u
     \item[] Equilibrium: partial vs general
     \item[] Sectors: public vs private, financial vs real and their interactions
     \item[] Production: Cobb-Douglas vs constant elasticity of substitution
-    \item[] Monetary: Neutral vs Non-neutral Money, Quantity Theory of Money vs Fiscal Theory of the Price Level etc.
+    \item[] Monetary: Neutral vs Non-neutral Money, Quantity Theory of Money vs Fiscal Theory of the Price Level, etc.
 \end{enumerate}
 
-Other attributes/specifications of a native token economy that are generally absent for Polkadot parachains are: Agent Utility, Market Rates (Riskless Rates + Risk Premia), Rate Curves (by maturity), Borrowing/Lending, Lender of Last Resort.
+Other attributes/specifications of a native token economy that are generally absent for Polkadot parachains are Agent Utility, Market Rates (Riskless Rates + Risk Premia), Rate Curves (by maturity), Borrowing/Lending, and Lender of Last Resort.
 
 \subsection{Economy Type}
-A token economy can be classified as open if it allows unrestricted staking and rewarding using the native coin (NC) of other token economies, as well as accepting the native coins of other token economies as a means of payment for transaction fees. On the other hand, if a token economy does not meet these criteria partially or fully, it can be categorized as either ajar or closed. The same classification can also be applied when using tokens instead of native coins. In this context, staking refers to the actions taken to ensure the security of the blockchain.
+A token economy can be classified as open if it allows unrestricted staking and rewarding using the native coin (NC) of other token economies, as well as accepting the native coins of other token economies as a means of payment for transaction fees. On the other hand, if a token economy does not meet these criteria partially or fully, it can be categorized as either ajar or closed. In this context, staking refers to the actions taken to ensure the security of the blockchain. 
 
 \begin{center}
 \begin{tikzpicture}[
@@ -394,7 +444,7 @@ A token economy can be classified as open if it allows unrestricted staking and 
 \end{center}
 
 \subsection{Model Type}
-Reduced-form models establish relationships between endogenous variables based on observable exogenous variables. Structural models, on the other hand, originate from theories and provide a deeper understanding of behavioral patterns, which may involve unobservable parameters. The selection of an approach is frequently influenced by data availability and considerations related to estimation and calibration. In the absence of data, simulations are often employed as an alternative method.
+Reduced-form models establish relationships between endogenous variables based on observable variables. For example, an endogenous variable might be user adoption, proxied by observed daily active accounts. Structural models, on the other hand, originate from theories and provide a deeper understanding of behavioral patterns, which may involve unobservable parameters. The selection of an approach is frequently influenced by data availability and considerations related to estimation and calibration. In the absence of data, simulations are often employed as an alternative method.
 
 \begin{center}
 \begin{tikzpicture}[
@@ -614,7 +664,7 @@ While the articles included here may be the first generation of Token pricing mo
 
 The annotated articles can be viewed two ways. The first is as a description of what platforms do. The second is as a description of how platforms should be designed. Taking the first view, the results can help set expectations about the platform functionality, strengths and weaknesses. Taking the second view, the results can suggest how to configure a blockchain, point to possible users, functionality they may desire and help set expectations about the platform functionality. Both cases require mapping real-world properties and behaviors to abstract descriptions. And this requires an abundance of pragmatism and the willingness to live with approximations.
 
-It is true that neither Polkadot nor the parallel-chains currently on Polkadot have been designed nor conceived, using a rational expectations hypothesis.  That does not mean it is not possible to do so.  However, it is important to bear in mind that the models surveyed here are first generation models. Consequently, it is very likely that a blockchain that strives to implement one of the models described here will require substantial revisions as well as fine tuning.
+It is true that neither Polkadot nor the parachains currently on Polkadot have been designed nor conceived, using a rational expectations hypothesis.  That does not mean it is not possible to do so.  However, it is important to bear in mind that the models surveyed here are first generation models. Consequently, it is very likely that a blockchain that strives to implement one of the models described here will require substantial revisions as well as fine tuning.
 
 % Annotated Bibliography
 \clearpage
