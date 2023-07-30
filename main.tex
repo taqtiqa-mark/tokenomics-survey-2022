@@ -9,6 +9,7 @@
 
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
+\usepackage{float}
 \usepackage[letterpaper, total={7in, 9in}]{geometry}
 \usepackage[notes,backend=biber,isbn=false,url=false,annotation]{biblatex-chicago}
 % Required package
@@ -481,7 +482,7 @@ Other attributes/specifications of a native token economy that are generally abs
 \subsection{Economy Type}
 A token economy can be classified as open if it allows unrestricted staking and rewarding using the native token (NT) of other token economies, as well as accepting the native tokens of other token economies as a means of payment for transaction fees. On the other hand, if a token economy does not meet these criteria partially or fully, it can be categorized as either ajar or closed. In this context, staking refers to the actions taken to ensure the security of the blockchain. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \small
 \centering
 \begin{tikzpicture}[
@@ -550,7 +551,7 @@ A token economy can be classified as open if it allows unrestricted staking and 
 \subsection{Model Type}
 Reduced-form models establish relationships between endogenous variables based on observable variables. For example, an endogenous variable might be user adoption, proxied by observed daily active accounts. Structural models, on the other hand, originate from theories and provide a deeper understanding of behavioral patterns, which may involve unobservable parameters. The selection of an approach is frequently influenced by data availability and considerations related to estimation and calibration. In the absence of data, simulations are often employed as an alternative method.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \small
 \centering
 \begin{tikzpicture}[
@@ -620,7 +621,7 @@ General equilibrium theory aims to provide an explanation of the behavior of sup
 
 In a general equilibrium model, the overall equilibrium quantities and prices are determined endogenously for the entire economy. This involves considering initial endowments and modeling agent behavior, with the objective of describing changes in prices and quantities that result in a "Pareto Optimal" outcome. On the other hand, a partial equilibrium model focuses on analyzing a specific part of the economy while assuming other parts to be constant or even absent. In such cases, either the price or quantity process is typically specified, and the other variable is derived from it, which necessitates a reduced-form model. It is worth noting that a partial equilibrium approach can sometimes lead to outcomes where no trade occurs. When possible, it can be beneficial to calculate an equivalent structural equilibrium that supports a reduced-form partial equilibrium specification, and vice versa. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \small
 \centering
 \begin{tikzpicture}[
@@ -679,7 +680,7 @@ Multisector models are used to explore the allocation of resources across differ
 \subsection{Production Type}
 A production function is a specification of how the quantity of output behaves as a function of the inputs used in production.  In both general and partial equilibrium settings, it is used to connect different parts of an economy, for example, the Production-CAPM\autocite{cochrane91}.  Only two production functions are considered here: The Cobb-Douglas (C-D) and the Constant Elasticity of Substitution\footnote{Leontief, linear and Cobb–Douglas functions are special cases of the CES production function.} (CES).  The elasticity of substitution (ES) is a measure of how easy it is to shift between factor inputs - the percentage change in the ratio of the two inputs relative to the percentage change in their prices.
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \small
 \centering
 \begin{tikzpicture}[
@@ -759,7 +760,7 @@ A production function is a specification of how the quantity of output behaves a
 \subsection{Monetary Type}
 Monetary Policy is one of the most fraught topics in macroeconomics. There is no consensus on an unconditionally optimal policy. An important choice will be between adopting non-neutral or neutral monetary policies. While there is no consensus on the optimal choice, there is extensive literature on both. The monetary policy-related lectures for The Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel\autocite{nobel}, provide a useful review of the background, progress, and controversies. Generally, the designer of a token economy will be left to choose from among the alternatives shown in Table~\ref{tbl:mpt}.
 
-\begin{table}[!h]
+\begin{table}[H]
 \caption{Monetary Policy Types} % title name of the table
 \small
 \centering % centering table
@@ -783,7 +784,7 @@ Collateral peg & Collateral spot price & Low inflation as measured by the collat
 
 This analysis is limited to publicly available network whitepapers or token-economy/tokenomics documentation. None of the reviewed Polkadot parachain tokens were designed using a rational expectations framework (with the possible exception of the Equilibrium parachain), and none derive an expression for their token price dynamics. Consequently, the range of functionality for which tokens can be used has been summarized using the classification scheme by Burnie, Burnie, and Henderson(2018)\autocite{burnie18}.  In their scheme, differentiating tokens based on functional attributes, tokens are categorized into crypto-transaction tokens (cash substitutes); crypto-fuel tokens (generic blockchain applications); and crypto-voucher tokens (exchangeable for consumption goods). This classification helps identify issues to consider when participating in a cryptocurrency system.  For crypto-transaction and crypto-fuel tokens is the token a better form of money? For crypto-fuel tokens, the application user base and the utility of the token system are more important. For crypto-voucher tokens, the value of the numeraire good and the token’s exchangeability are important considerations.  The results are summarized in Table~\ref{tbl:ntf}.
 
-\begin{table}[!h]
+\begin{table}[H]
 \caption{Native Token Functions: Polkadot Ecosystem} % title name of the table
 \small
 \centering % centering table
