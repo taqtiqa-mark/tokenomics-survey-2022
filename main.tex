@@ -377,7 +377,7 @@ URL = {https://doi.org/10.1215/S0012-7094-41-00838-4}
 \maketitle
 \begin{abstract}
 \begin{quote}
-This project highlights some tools and techniques relevant to the design of a token economy under a rational expectations hypothesis.  Six articles are reviewed, these enumerate the conditions for equilibrium pricing of effervescent-tokens, dampened-tokens, breakable-tokens, and redeemable-tokens. A review of Polkadot parachain token designs indicates there are differences in the issues and risks addressed by token equilibrium pricing models and those addressed by the designs practiced in the Polkadot ecosystem.
+This project highlights some tools and techniques relevant to the design of a token economy under a rational expectations hypothesis.  Six articles are reviewed, these enumerate some conditions for equilibrium pricing of specific effervescent-tokens, dampened-tokens, breakable-tokens, and redeemable-tokens. A review of Polkadot parachain token designs indicates there are differences in the issues and risks addressed by token equilibrium pricing models and those addressed by the designs practiced in the Polkadot ecosystem.
 \end{quote}
 \end{abstract}
 
@@ -385,7 +385,7 @@ This project highlights some tools and techniques relevant to the design of a to
 
 \section{Background}
 
-As a scoping review, see Table~\ref{tbl:sr}, the premise is interested readers will refer to the published articles and cited references for additional details.  The aim of this project is to point to ideas and references that initiate further investigation.
+As a scoping review, see Table~\ref{tbl:sr}, the premise of this work is the interested reader will refer to the published articles and cited references for additional details.  The aim of this project is to point to ideas and references that initiate further investigation.  A scoping review cannot be considered a source for specific detail on the relation between the economic concepts canvassed here. For the impatient, one can start with Darrell Duffie's text\autocite{duffie01} along side Ljungqvist and Sargent's text\autocite{ljungqvist18}.
 
 \begin{table}[!h]
 \caption{Scoping Review: Extract from Table 1 of Grant, M.J. and Booth, A. (2009)} % title name of the table
@@ -502,11 +502,11 @@ A token economy can be classified as open if it allows unrestricted staking and 
 \node (Type00) [type] {Economy Type} [->]
     child{
         child{ [sibling distance=5cm]
-            node (Q01) [question, align=center] {NC\\External:\\Stake/\\Reward}
+            node (Q01) [question, align=center] {NT\\External:\\Stake/\\Reward}
             child{
                 node (A02) [answer] {Yes}
                 child{ [sibling distance=3cm]
-                    node (Q02) [question, align=center] {NC\\External:\\Txn\\Fees}
+                    node (Q02) [question, align=center] {NT\\External:\\Txn\\Fees}
                     child{
                         node (A03) [answer] {Yes}
                         child{
@@ -524,7 +524,7 @@ A token economy can be classified as open if it allows unrestricted staking and 
             child{ 
                 node (A10) [answer] {No}
                 child{ [sibling distance=3cm]
-                    node (Q10) [question, align=center] {NC\\External:\\Txn\\Fees}
+                    node (Q10) [question, align=center] {NT\\External:\\Txn\\Fees}
                     child{
                         node (A11) [answer] {Yes}
                         child{ 
@@ -884,7 +884,7 @@ Each section of the report/working paper was developed using some subset of the 
 \begin{enumerate}
     \item Review reporting guidelines, best practice handbooks, and training modules [preparation stage]
     \item Formulate question and decide on review type [preparation stage]
-    \item Search for previous published literature [preparation stage]
+    \item Search for previously published literature [preparation stage]
     \item Develop and test search strategies [preparation stage]
     \item Review search strategies [preparation stage]
     \item Execute search [retrieval stage]
